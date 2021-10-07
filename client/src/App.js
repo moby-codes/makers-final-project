@@ -1,25 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import { Container } from 'react-bootstrap'
+import Footer from './components/footer'
+import Header from './components/Header'
+import Story from './components/Story'
+import Question from './components/Question'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          react for our learning app is complete
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (   
+       <>
+       <div className="title">
+       <Container> 
+          <h1> Quiz 1 </h1>
+      </Container>
+        </div>
+
+        <Story />
+        <Question />
+
+        <div className="footer"><Footer /> </div>
+       </>  
+       
+    );
 }
 
 export default App;
