@@ -23,7 +23,8 @@ code {
   margin: auto;
 }
 .footer {
-  min-height: 100vh;
+  height: 32px;
+  padding: 8px;
 }
 .story-question {
   padding-bottom: 25px;

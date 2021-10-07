@@ -12,7 +12,7 @@ export const Question = () => {
     <h4 class="card-title">Question text lorem ipsum blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</h4>
     <div class="d-grid gap-2">
     <button class="btn btn-lg btn-primary" type="button">Question 1 button to select</button>
-    <button class="btn btn-lg btn-primary" type="button">BQuestion 2 button to select</button>
+    <button class="btn btn-lg btn-primary" type="button">Question 2 button to select</button>
     <button class="btn btn-lg btn-primary" type="button">Question 3 button to select</button>
     <button class="btn btn-lg btn-primary" type="button">Question 4 button to select</button>
     </div>

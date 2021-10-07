@@ -9,6 +9,7 @@ import Question from './components/Question'
 function App() {
   return (   
        <>
+       
        <div className="title">
        <Container> 
           <h1> Quiz 1 </h1>
