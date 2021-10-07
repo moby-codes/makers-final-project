@@ -7,6 +7,12 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
+test('when user clicks on correct answer, score should increment', () => {
+  render(<App />);
+  button.find('#1').simulate('click');
+});
+
+
 
 
 

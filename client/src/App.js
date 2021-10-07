@@ -84,8 +84,8 @@ export default function App() {
               </Card.Body>
             </Card>
             <div className="answer-section">
-              {questions[currentQuestion].answerOptions.map((answerOption) => (
-                <button
+              {questions[currentQuestion].answerOptions.map((answerOption, index) => (
+                <button id = {index + 1}
                   onClick={() =>
                     handleAnswerOptionClick(answerOption.isCorrect)
                   }
