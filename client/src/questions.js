@@ -2,6 +2,7 @@ export const questions = [
   {
     storyTitle: "Capital City Story",
     storySubtitle: "Capital placeholder subtitle",
+    storyText: "Clue: rhymes with Gary",
     questionText: "What is the capital of France?",
     answerOptions: [
       { answerText: "New York", isCorrect: false },
@@ -13,6 +14,7 @@ export const questions = [
   {
     storyTitle: "Tech Mogul Story",
     storySubtitle: "Tech mogul placeholder subtitle",
+    storyText: "Clue: anagram of Lone Skum",
     questionText: "Who is CEO of Tesla?",
     answerOptions: [
       { answerText: "Jeff Bezos", isCorrect: false },
@@ -24,6 +26,8 @@ export const questions = [
   {
     storyTitle: "Smartphone Story",
     storySubtitle: "Smartphone placeholder subtitle",
+    storyText:
+      "Clue: You might need to work several Jobs to pay for one of these",
     questionText: "The iPhone was created by which company?",
     answerOptions: [
       { answerText: "Apple", isCorrect: true },
@@ -35,6 +39,7 @@ export const questions = [
   {
     storyTitle: "Boy Wizard Story",
     storySubtitle: "Potter placeholder subtitle",
+    storyText: "You'll be 'lucky' to get this one right",
     questionText: "How many Harry Potter books are there?",
     answerOptions: [
       { answerText: "1", isCorrect: false },
