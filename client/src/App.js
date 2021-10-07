@@ -73,7 +73,11 @@ export default function App() {
               <Card.Header className="bg-light">Kids Coding Quiz</Card.Header>
               <Card.Body>
                 <div className="question-section">
-                  <div className="question-count">
+                  <div
+                    className="question-count"
+                    id="score_keeper"
+                    data-score={score}
+                  >
                     <span>Question {currentQuestion + 1}</span>/
                     {questions.length}
                   </div>
@@ -84,15 +88,19 @@ export default function App() {
               </Card.Body>
             </Card>
             <div className="answer-section">
-              {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-                <button id = {index + 1}
-                  onClick={() =>
-                    handleAnswerOptionClick(answerOption.isCorrect)
-                  }
-                >
-                  {answerOption.answerText}
-                </button>
-              ))}
+              {questions[currentQuestion].answerOptions.map(
+                (answerOption, index) => (
+                  <button
+                    key={"answer" + index}
+                    id={"answer" + index}
+                    onClick={() =>
+                      handleAnswerOptionClick(answerOption.isCorrect)
+                    }
+                  >
+                    {answerOption.answerText}
+                  </button>
+                )
+              )}
             </div>
           </div>
         </>
