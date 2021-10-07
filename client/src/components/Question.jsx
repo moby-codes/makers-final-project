@@ -3,9 +3,8 @@ import { useState } from "react";
 import { Container } from "react-bootstrap";
 import { questions } from '../questions.js'
 
-export const Question = () => {
+export const Question = ({currentQuestion, setCurrentQuestion}) => {
   
-  const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false)
   const [score, setScore] = useState(0);
 
