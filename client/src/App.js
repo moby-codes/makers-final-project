@@ -7,11 +7,13 @@ import Button from "react-bootstrap/Button";
 export default function App() {
   const questions = [
     {
-      questionText: "What is the capital of France?",
+      subjectTile: "Naming objects, declaring variables programatically",
+      subjectContext: "While naming",
+      questionText: "Name the blue bear  to be Max",
       answerOptions: [
-        { answerText: "New York", isCorrect: false },
-        { answerText: "London", isCorrect: false },
-        { answerText: "Paris", isCorrect: true },
+        { answerText: "blue bear", isCorrect: false },
+        { answerText: "red bear", isCorrect: false },
+        { answerText: "brown brown", isCorrect: true },
         { answerText: "Dublin", isCorrect: false },
       ],
     },
