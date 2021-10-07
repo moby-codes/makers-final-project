@@ -1,8 +1,12 @@
 // import logo from "./logo.svg";
 import "./App.css";
 import React, { useState } from "react";
-import Card from "react-bootstrap/Card";
-
+import logo from "./logo.svg";
+import { Card, Container } from "react-bootstrap";
+import Footer from "./components/footer";
+import Header from "./components/Header";
+import Story from "./components/Story";
+import Question from "./components/Question";
 
 export default function App() {
   const questions = [
@@ -69,6 +73,18 @@ export default function App() {
     }
   };
   return (
+    //   <>
+    //   <div className="title">
+    //   <Container>
+    //      <h1> Quiz 1 </h1>
+    //  </Container>
+    //    </div>
+
+    //    <Story />
+    //    <Question />
+
+    //    <div className="footer"><Footer /> </div>
+    //   </>
     <div className="app">
       {showScore ? (
         <div className="score-section">
@@ -86,8 +102,8 @@ export default function App() {
                     id="score_keeper"
                     data-score={score}
                   >
-                  <span>Question {currentQuestion + 1}</span>/
-                  {questions.length}
+                    <span>Question {currentQuestion + 1}</span>/
+                    {questions.length}
                   </div>
                   <div className="question-text">
                     {questions[currentQuestion].questionTitle}
