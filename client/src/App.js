@@ -70,7 +70,7 @@ export default function App() {
         <>
           <div className="container text-center bg-primary">
             <Card style={{ width: "auto" }} className="mx-auto">
-              <Card.Header className="bg-light">XYZ</Card.Header>
+              <Card.Header className="bg-light">Kids Coding Quiz</Card.Header>
               <Card.Body>
                 <div className="question-section">
                   <div className="question-count">
