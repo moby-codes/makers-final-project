@@ -2,46 +2,52 @@
 import "./App.css";
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+
 
 export default function App() {
   const questions = [
     {
-      subjectTile: "Naming objects, declaring variables programatically",
-      subjectContext: "While naming",
-      questionText: "Name the blue bear  to be Max",
+      questionTitle: "Question title goes here",
+      questionContext: "Question context here",
+      questionText: "Name the blue bear to be Max",
       answerOptions: [
-        { answerText: "blue bear", isCorrect: false },
-        { answerText: "red bear", isCorrect: false },
-        { answerText: "brown brown", isCorrect: true },
-        { answerText: "Dublin", isCorrect: false },
+        { answerText: "blue bear = max", isCorrect: false },
+        { answerText: "bule-bear = max", isCorrect: false },
+        { answerText: "blue_bear = max", isCorrect: true },
+        { answerText: "red_bear= max", isCorrect: false },
       ],
     },
     {
-      questionText: "Who is CEO of Tesla?",
+      questionTitle: "Question title goes here",
+      questionContext: "Question context here",
+      questionText: "Question goes here",
       answerOptions: [
-        { answerText: "Jeff Bezos", isCorrect: false },
-        { answerText: "Elon Musk", isCorrect: true },
-        { answerText: "Bill Gates", isCorrect: false },
-        { answerText: "Tony Stark", isCorrect: false },
+        { answerText: "answer", isCorrect: false },
+        { answerText: "answer", isCorrect: true },
+        { answerText: "answer", isCorrect: false },
+        { answerText: "answer", isCorrect: false },
       ],
     },
     {
-      questionText: "The iPhone was created by which company?",
+      questionTitle: "Question title goes here",
+      questionContext: "Question context here",
+      questionText: "Question goes here",
       answerOptions: [
-        { answerText: "Apple", isCorrect: true },
-        { answerText: "Intel", isCorrect: false },
-        { answerText: "Amazon", isCorrect: false },
-        { answerText: "Microsoft", isCorrect: false },
+        { answerText: "answer", isCorrect: true },
+        { answerText: "answer", isCorrect: false },
+        { answerText: "answer", isCorrect: false },
+        { answerText: "answer", isCorrect: false },
       ],
     },
     {
-      questionText: "How many Harry Potter books are there?",
+      questionTitle: "Question title goes here",
+      questionContext: "Question context here",
+      questionText: "Question goes here",
       answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true },
+        { answerText: "answer", isCorrect: false },
+        { answerText: "answer", isCorrect: false },
+        { answerText: "answer", isCorrect: false },
+        { answerText: "answer", isCorrect: true },
       ],
     },
   ];
@@ -80,8 +86,14 @@ export default function App() {
                     id="score_keeper"
                     data-score={score}
                   >
-                    <span>Question {currentQuestion + 1}</span>/
-                    {questions.length}
+                  <span>Question {currentQuestion + 1}</span>/
+                  {questions.length}
+                  </div>
+                  <div className="question-text">
+                    {questions[currentQuestion].questionTitle}
+                  </div>
+                  <div className="question-text">
+                    {questions[currentQuestion].questionContext}
                   </div>
                   <div className="question-text">
                     {questions[currentQuestion].questionText}
