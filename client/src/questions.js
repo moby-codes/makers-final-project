@@ -1,51 +1,69 @@
 export const questions = [
   {
-    storyTitle: "Capital City Story",
-    storySubtitle: "Capital placeholder subtitle",
-    storyText: "Clue: rhymes with Gary",
-    questionText: "What is the capital of France?",
+    storyTitle: "Preparing for blast off",
+    storySubtitle: "Assigning Variables",
+    storyText: `Welcome to the space technology centre! Today you are going to become an astronaut. 
+      Your rocket ship’s computer is called DIANE-1000. The computer is very powerful, but needs to be told where the ship is going. This can be done like this:
+      destination = “Mars”
+      If we want to go somewhere else, we can change the destination like this:
+      destination = “Venus”`,
+    questionText:
+      "Now you know how to use the ship’s computer, can you program it for a voyage to the Moon? Click the correct answer!",
     answerOptions: [
-      { answerText: "New York", isCorrect: false },
-      { answerText: "London", isCorrect: false },
-      { answerText: "Paris", isCorrect: true },
-      { answerText: "Dublin", isCorrect: false },
+      { answerText: `destination = Moon`, isCorrect: false },
+      { answerText: `destination is "Moon"`, isCorrect: false },
+      { answerText: `destination = "Moon"`, isCorrect: true },
+      { answerText: `destination > "Moon"`, isCorrect: false },
     ],
   },
   {
-    storyTitle: "Tech Mogul Story",
-    storySubtitle: "Tech mogul placeholder subtitle",
-    storyText: "Clue: anagram of Lone Skum",
-    questionText: "Who is CEO of Tesla?",
+    storyTitle: "Filling up the rocket",
+    storySubtitle: "Arithmetic operators",
+    storyText: `We are nearly ready to blast off from Earth and visit the Moon, but first we need to make some calculations to make sure we have all the fuel we will need for our journey. 
+    Luckily, computers are basically very powerful calculators, and DIANE-1000 is no exception. You can tell her to add numbers like this:
+	
+    2 + 2
+  
+  Or subtract:
+  
+    4 - 2
+  
+  Or even multiply and divide:
+  
+    4 * 4 
+    4 / 4`,
+    questionText: `We have two fuel tanks which take 100 units of plant based rocket fuel.  Which code will calculate how much fuel we need to fill our tanks ?`,
     answerOptions: [
-      { answerText: "Jeff Bezos", isCorrect: false },
-      { answerText: "Elon Musk", isCorrect: true },
-      { answerText: "Bill Gates", isCorrect: false },
-      { answerText: "Tony Stark", isCorrect: false },
+      { answerText: `fuel = 100 * 2`, isCorrect: true },
+      { answerText: `fuel = plant_fuel - plant_fuel`, isCorrect: false },
+      { answerText: `fuel = 50 + 50`, isCorrect: false },
+      { answerText: `fuel = 100 / 2`, isCorrect: false },
     ],
   },
   {
-    storyTitle: "Smartphone Story",
-    storySubtitle: "Smartphone placeholder subtitle",
-    storyText:
-      "Clue: You might need to work several Jobs to pay for one of these",
-    questionText: "The iPhone was created by which company?",
+    storyTitle: ``,
+    storySubtitle: ``,
+    storyText: ``,
+    questionText: ``,
     answerOptions: [
-      { answerText: "Apple", isCorrect: true },
-      { answerText: "Intel", isCorrect: false },
-      { answerText: "Amazon", isCorrect: false },
-      { answerText: "Microsoft", isCorrect: false },
-    ],
-  },
-  {
-    storyTitle: "Boy Wizard Story",
-    storySubtitle: "Potter placeholder subtitle",
-    storyText: "You'll be 'lucky' to get this one right",
-    questionText: "How many Harry Potter books are there?",
-    answerOptions: [
-      { answerText: "1", isCorrect: false },
-      { answerText: "4", isCorrect: false },
-      { answerText: "6", isCorrect: false },
-      { answerText: "7", isCorrect: true },
+      { answerText: ``, isCorrect: true },
+      { answerText: ``, isCorrect: false },
+      { answerText: ``, isCorrect: false },
+      { answerText: ``, isCorrect: false },
     ],
   },
 ];
+
+// {
+//   storyTitle: ``,
+//   storySubtitle: ``,
+//   storyText:
+//     ``,
+//   questionText: ``,
+//   answerOptions: [
+//     { answerText: ``, isCorrect: true },
+//     { answerText: ``, isCorrect: false },
+//     { answerText: ``, isCorrect: false },
+//     { answerText: ``, isCorrect: false },
+//   ],
+// },
