@@ -16,6 +16,12 @@ code {
   text-align: center;
   padding-top: 25px;
 }
+
+.score-section {
+  text-align: center;
+  font-size: 30pt;
+}
+
 .story-card {
   padding-top: 25px;
   padding-bottom: 25px;
