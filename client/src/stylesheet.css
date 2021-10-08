@@ -14,7 +14,8 @@ code {
 
 .title {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .score-section {
@@ -31,14 +32,16 @@ code {
 .footer {
   height: 32px;
   padding: 8px;
+  position: fixed;
 }
 .story-question {
   padding-bottom: 25px;
   width: 65%;
   margin: auto;
 }
-.qcard1 {
+.qcard {
+  padding-top: 35px;
   padding-bottom: 25px;
-  width: 20%;
-  margin: auto;
+  width: 33%;
+  display: inline-block;
 }
