@@ -27,7 +27,7 @@ storyRoutes.route("/stories").get(function (req, res) {
 storyRoutes.route("/stories/:id").get(function (req, res) {
   let db_connect = dbo.getDb();
   let myquery = { _id: ObjectId(req.params.id) };
-  db_connect.collection("records").findOne(myquery, function (err, result) {
+  db_connect.collection("stories").findOne(myquery, function (err, result) {
     if (err) throw err;
     res.json(result);
   });
