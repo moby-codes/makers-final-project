@@ -46,3 +46,25 @@ code {
   display: inline-block;
   color: rgb(222, 12, 12);
 }
+.quizQuestions {
+  width: 75%;
+  margin: auto;
+
+  background: rgb(222, 12, 12) !important;
+}
+
+.QcardButton {
+  text-align: center;
+}
+
+.about_us_paragraph {
+  text-align: left;
+  padding-top: 20px;
+  color: rgb(168, 18, 8)
+}
+
+.about_us_title {
+  padding-top: 20px;
+  text-align: center;
+  color: rgb(0, 167, 8);
+}
