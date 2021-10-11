@@ -9,7 +9,7 @@ export const footer = () => {
           <Row>
             <Col className="text-center">
               <span>
-                Copyright &copy; Learn4u
+                Copyright &copy; Code4Fun
               </span>
             </Col>
           </Row>
