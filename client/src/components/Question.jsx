@@ -30,7 +30,7 @@ export const Question = ({currentQuestion, setCurrentQuestion}) => {
       <>
         <Container>
           <div className="quizQuestions">
-            <div class="card border-primary mb-3">
+            <div class="card border-warning mb-3">
               <div class="card-header">Question Number {currentQuestion + 1}</div>
               <div class="card-body">
                 <h4 class="card-title">{questions[currentQuestion].questionText}</h4>

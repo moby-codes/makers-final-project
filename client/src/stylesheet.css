@@ -49,4 +49,6 @@ code {
 .quizQuestions {
   width: 75%;
   margin: auto;
+
+  background: rgb(222, 12, 12) !important;
 }

@@ -9,10 +9,10 @@ const Story = ({currentQuestion}) => {
       <div className="story-card">
 
     <Container>
-      <div class="card">
+      <div class="card bg-warning">
         <div class="card-body">
           <h4 class="card-title">{questions[currentQuestion].storyTitle}</h4>
-          <h6 class="card-subtitle mb-2 text-muted">{questions[currentQuestion].storySubtitle}</h6>
+          <h6 class="card-subtitle mb-2">{questions[currentQuestion].storySubtitle}</h6>
           {questions[currentQuestion].storyText.map((element) => (
             <p class="card-text">{element.text}</p>
 	        ))}
