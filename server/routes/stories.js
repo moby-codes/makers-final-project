@@ -13,7 +13,7 @@ const ObjectId = require("mongodb").ObjectId;
 
 // This section will help you get a list of all the records.
 storyRoutes.route("/stories").get(function (req, res) {
-  let db_connect = dbo.getDb("employees");
+  let db_connect = dbo.getDb("storyDatabase");
   db_connect
     .collection("stories")
     .find({})
@@ -24,7 +24,7 @@ storyRoutes.route("/stories").get(function (req, res) {
 });
 
 // This section will help you get a single record by id
-recordRoutes.route("/stories/:id").get(function (req, res) {
+storyRoutes.route("/stories/:id").get(function (req, res) {
   let db_connect = dbo.getDb();
   let myquery = { _id: ObjectId(req.params.id) };
   db_connect.collection("records").findOne(myquery, function (err, result) {
