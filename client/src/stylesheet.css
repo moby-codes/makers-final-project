@@ -33,6 +33,10 @@ body {
   font-family: 'Fredericka the Great', cursive;
 }
 
+/* #root{
+  background-color: rgb(255, 159, 80);
+} */
+
 .title {
   text-align: center;
   padding-top: 35px;
