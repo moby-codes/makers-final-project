@@ -2,9 +2,8 @@ import React from 'react'
 import { Container } from "react-bootstrap";
 import { questions } from "../questions"
 
-// <p class="card-text">{questions[currentQuestion].storyText[index].text}</p>
+const Story = ({currentQuestion}) => {
 
-export const Story = ({currentQuestion}) => {
   return (
     <>
       <div className="story-card">
