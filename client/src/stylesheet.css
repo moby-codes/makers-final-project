@@ -1,17 +1,16 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'The Girl Next Door', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: 'The Girl Next Door', cursive;
 }
-
+.custom-font {
+  font-family: 'The Girl Next Door', cursive;
+}
 .title {
   text-align: center;
   padding-top: 35px;
@@ -40,16 +39,17 @@ code {
   margin: auto;
 }
 .qcard {
+  font-family: 'The Girl Next Door', cursive;
   padding-top: 35px;
   padding-bottom: 25px;
   width: 33%;
   display: inline-block;
   color: rgb(222, 12, 12);
 }
+
 .quizQuestions {
   width: 75%;
   margin: auto;
-
   background: rgb(222, 12, 12) !important;
 }
 
