@@ -23,5 +23,4 @@ const Story = ({currentQuestion}) => {
     </>
   )
 }
-
 export default Story;
