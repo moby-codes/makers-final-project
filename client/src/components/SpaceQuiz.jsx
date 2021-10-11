@@ -10,12 +10,13 @@ export const SpaceQuiz = () => {
   return (
     <>
 
+      <Story currentQuestion={currentQuestion} />
+
       <Question
         currentQuestion={currentQuestion}
         setCurrentQuestion={setCurrentQuestion}/>
       
 
-      <Story currentQuestion={currentQuestion} />
 
       
     </>
