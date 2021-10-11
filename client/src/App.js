@@ -33,7 +33,7 @@ export default function App() {
         <Route path="/quiz1" component={SpaceQuiz} exact />
         <Route path="/about" component={About} exact />
       </Container> 
-      <Footer />
+      <footer className="footer--pin"> <Footer /> </footer>
 
       </Router>
     </>
