@@ -2,7 +2,7 @@ import React from 'react'
 import { Container } from "react-bootstrap";
 import { questions } from "../questions"
 
-export const Story = ({currentQuestion}) => {
+const Story = ({currentQuestion}) => {
   return (
     <>
       <div className="story-card">

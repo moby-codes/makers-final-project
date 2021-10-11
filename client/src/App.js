@@ -1,26 +1,41 @@
 // import logo from "./logo.svg";
-import { useState } from "react";
 import { Container } from "react-bootstrap";
 import Footer from "./components/footer";
-import Story from "./components/Story";
-import Question from "./components/Question";
+import Header from "./components/Header"
+import Title from "./components/Title"
+import QuizDashboard from "./components/QuizDashboard"
+import home from "./components/home"
+import {BrowserRouter as Router, Route} from "react-router-dom"
+import SpaceQuiz from "./components/SpaceQuiz"
+import About from "./components/About"
+
 
 export default function App() {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+ 
 
   return (
     <>
+    <Router>
+
+      <Container> 
+        <Header />
+      </Container>
+
       <div className="title">
         <Container>
-          <h1> Quiz </h1>
+          <Title />
         </Container>
       </div>
-      <Story currentQuestion={currentQuestion} />
-      <Question
-        currentQuestion={currentQuestion}
-        setCurrentQuestion={setCurrentQuestion}
-      />
-      <Footer />{" "}
+
+      <Container> 
+        <Route path="/signin" component={home} exact />
+        <Route path="/" component={QuizDashboard} exact />
+        <Route path="/quiz1" component={SpaceQuiz} exact />
+        <Route path="/about" component={About} exact />
+      </Container> 
+      <footer className="footer--pin"> <Footer /> </footer>
+
+      </Router>
     </>
   );
 }
