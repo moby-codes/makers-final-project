@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
- import {LinkContainer} from 'react-router-bootstrap'
 
 
 export const Header = () => {
@@ -22,9 +21,11 @@ export const Header = () => {
                   <span class="visually-hidden">(current)</span>
                 </a>
               </li>
+               
                 <li class="nav-item">
-                  <a class="nav-link" href="/sign-in">Sign In</a>
+                  <a class="nav-link" href="/about">About</a>
                 </li>
+
 
             </ul>
           </div>
@@ -37,3 +38,7 @@ export const Header = () => {
 }
 
 export default Header;
+
+// <li class="nav-item">
+// <a class="nav-link" href="/signin">Sign In</a>
+// </li>

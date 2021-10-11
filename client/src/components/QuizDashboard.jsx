@@ -1,8 +1,9 @@
 import React from 'react'
 import { Container } from "react-bootstrap";
-import { LinkContainer } from 'react-router-bootstrap';
+// import { LinkContainer, Link } from 'react-router-bootstrap';
+// import { Link } from 'react-router';
 
-const QuizCards = () => {
+const QuizDashboard = () => {
 
   
 
@@ -21,7 +22,7 @@ const QuizCards = () => {
               <div class="card-body">
                 <h4 class="card-title font-family: arial">Space Quiz</h4>
                 <p class="card-text">Welcome to Space, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
-                <button type="button" class="btn btn-info">Take Quiz</button>
+                <a href="/quiz1"><button type="button" class="btn btn-info">Take Quiz</button> </a>
             </div>
           </div>
         </Container>
@@ -42,19 +43,20 @@ const QuizCards = () => {
 
       <div className="qcard">
       <Container>
-      <LinkContainer to="/quiz1">
+      
           <div class="card text-white bg-warning mb-3">
             <div class="card-header">Story Header</div>
               <div class="card-body">
                 <h4 class="card-title">Jungle Quiz</h4>
                 <p class="card-text">Welcome to the jungle, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
+                 <button type="button" class="btn btn-info">Take Quiz</button> 
             </div>
           </div>
-          </LinkContainer>
+         
         </Container>
       </div>
     </>
   )
 }
 
-export default QuizCards;
+export default QuizDashboard;

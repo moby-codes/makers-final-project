@@ -4,7 +4,7 @@ import Story from "./Story";
 import Question from "./Question";
 
 
-export const Quiz1 = () => {
+export const SpaceQuiz = () => {
    const [currentQuestion, setCurrentQuestion] = useState(0);
 
   return (
@@ -22,4 +22,4 @@ export const Quiz1 = () => {
   )
 }
 
-export default Quiz1;
+export default SpaceQuiz;
