@@ -46,3 +46,7 @@ code {
   display: inline-block;
   color: rgb(222, 12, 12);
 }
+.quizQuestions {
+  width: 75%;
+  margin: auto;
+}
