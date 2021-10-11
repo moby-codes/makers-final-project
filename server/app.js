@@ -1,28 +1,45 @@
 var createError = require('http-errors');
-var express = require('express');
+const express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require("cors");
+require("dotenv").config({ path: "./config.env" });
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-var app = express();
+const app = express();
 const mongoose = require('mongoose')
+const port = process.env.PORT || 5000;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
+app.use(require("./routes/record"));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-mongoose.connect("mongodb+srv://mern:m6FsUCuva673REt@finalproject.xik8i.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+// mongoose.connect("mongodb+srv://mern:m6FsUCuva673REt@finalproject.xik8i.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+
+//get driver connection
+const dbo = require("./db/conn");
+
+app.listen(port, () => {
+  // perform a database connection when server starts
+  dbo.connectToServer(function (err) {
+    if (err) console.error(err);
+ 
+  });
+  console.log(`Server is running on port: ${port}`);
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
