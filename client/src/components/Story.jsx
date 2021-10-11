@@ -11,10 +11,10 @@ const Story = ({currentQuestion}) => {
     <Container>
       <div class="card bg-warning">
         <div class="card-body">
-          <h4 class="card-title">{questions[currentQuestion].storyTitle}</h4>
-          <h6 class="card-subtitle mb-2">{questions[currentQuestion].storySubtitle}</h6>
+          <h4 class="custom-font-2 card-title">{questions[currentQuestion].storyTitle}</h4>
+          <h6 class="custom-font-2 card-subtitle mb-2">{questions[currentQuestion].storySubtitle}</h6>
           {questions[currentQuestion].storyText.map((element) => (
-            <p class="card-text">{element.text}</p>
+            <p class="custom-font card-text">{element.text}</p>
 	        ))}
       </div>
     </div>
