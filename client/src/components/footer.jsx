@@ -8,7 +8,7 @@ export const footer = () => {
         <Container>
           <Row>
             <Col className="text-center">
-              <span>
+              <span id="custom-font-2">
                 Copyright &copy; Code4Fun
               </span>
             </Col>

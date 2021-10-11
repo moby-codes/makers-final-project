@@ -8,6 +8,7 @@ body {
 code {
   font-family: 'The Girl Next Door', cursive;
 }
+
 .custom-font {
   font-family: 'The Girl Next Door', cursive;
 }
@@ -16,9 +17,22 @@ code {
   font-family: 'The Girl Next Door', cursive;
 }
 
+.custom-font-2 {
+  font-family: 'Chelsea Market', cursive;
+}
+
 #custom-font-2 {
   font-family: 'Chelsea Market', cursive;
 }
+
+.custom-font-3 {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+#custom-font-3 {
+  font-family: 'Fredericka the Great', cursive;
+}
+
 .title {
   text-align: center;
   padding-top: 35px;
