@@ -27,7 +27,11 @@ const QuizDashboard = () => {
               <div class="card-body">
                 <h4 class="card-title font-family: arial">Space Blast</h4>
                 <p class="card-text">Welcome to Space, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
-                <Link to="/spacequiz"><button type="button" class="btn btn-info">Take Quiz</button> </Link>
+                <Link to="/spacequiz">
+                  <div className="QcardButton">
+                    <button type="button" class="btn btn-warning">Take Quiz</button> 
+                  </div> 
+                </Link>
             </div>
           </div>
         </Container>
@@ -40,7 +44,11 @@ const QuizDashboard = () => {
               <div class="card-body">
                 <h4 class="card-title">Fairytail Quiz</h4>
                 <p class="card-text">details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
-                <Link to="/fairytalequiz"><button type="button" class="btn btn-info">Take Quiz</button> </Link>
+                <Link to="/fairytalequiz">
+                  <div className="QcardButton">
+                    <button type="button" class="btn btn-danger">Take Quiz</button> 
+                  </div> 
+                </Link>
             </div>
           </div>
         </Container>
@@ -54,7 +62,11 @@ const QuizDashboard = () => {
               <div class="card-body">
                 <h4 class="card-title">Jungle Quiz</h4>
                 <p class="card-text">Welcome to the jungle, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
-                <Link to="/junglequiz"><button type="button" class="btn btn-info">Take Quiz</button> </Link>
+                <Link to="/junglequiz">
+                  <div className="QcardButton">
+                    <button type="button" class="btn btn-success">Take Quiz</button> 
+                  </div>  
+                </Link>
             </div>
           </div>
          

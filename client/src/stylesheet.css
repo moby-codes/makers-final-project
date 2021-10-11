@@ -52,3 +52,7 @@ code {
 
   background: rgb(222, 12, 12) !important;
 }
+
+.QcardButton {
+  text-align: center;
+}
