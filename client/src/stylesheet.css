@@ -5,9 +5,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: 'The Girl Next Door', cursive;
-}
+} */
 
 .custom-font {
   font-family: 'The Girl Next Door', cursive;
@@ -61,7 +61,6 @@ code {
   margin: auto;
 }
 .qcard {
-  font-family: 'The Girl Next Door', cursive;
   padding-top: 35px;
   padding-bottom: 25px;
   width: 33%;
