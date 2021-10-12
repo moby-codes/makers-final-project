@@ -5,11 +5,11 @@ export const About = () => {
     <>
     <div className="about_us_title">
       <Container>
-        <h1> Code4Fun </h1>
+        <h1 data-testid="aboutTitle">Code4Fun</h1>
       </Container>
     </div>
     <Container>
-        <h3> Background: </h3>
+        <h3 data-testid="aboutHeading1">Background:</h3>
     </Container>
     <div className="about_us_paragraph">
       <Container>
@@ -20,7 +20,7 @@ export const About = () => {
       </Container>
     </div>
       <Container>
-        <h2>Founders:</h2>
+        <h2 data-testid="aboutHeading2">Founders:</h2>
           <p>Mubashar Ali</p>
           <p>Ian King</p>
           <p>Ed Packard</p>
