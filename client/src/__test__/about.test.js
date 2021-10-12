@@ -1,7 +1,11 @@
 import { render } from "@testing-library/react";
 import About from "../components/About";
 
-// first test should verify navbar loads(header) and that Code4Fun and about are displayed 
+// beforeEach(() => {
+//    const component = render(<About />);
+// });
+
+// first test is verifying about page for the content that we expect it to have. 
 
 test("renders title", () => {
   const component = render(<About />);
@@ -20,24 +24,22 @@ test("renders headings", () => {
 });
 
 
+test("renders details about app", () => {
+  const component = render(<About />);
+  const backEl = component.getByTestId("aboutDetails")
+  expect(backEl.textContent).toContain("This app was created")
+  
+});
 
 
+test("renders the names of the founders", () => {
+  const component = render(<About />);
+  const backEl = component.getByTestId("aboutFounders")
+  expect(backEl.textContent).toContain("Ali")
+  
+});
 
 
-
-
-
-
-
-// second test should verify about link renders a new view 
-
-// check quiz card and button have loaded on main page 
-
-// Scenario: Opened quiz 
-// User clicks correct answer check score value is incremented  
-// User clicks wrong answer check score value is unchanged 
-
-// Once user completes quiz, score is displayed 
 
 
 
