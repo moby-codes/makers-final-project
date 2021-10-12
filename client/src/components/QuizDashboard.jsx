@@ -16,7 +16,7 @@ const QuizDashboard = () => {
         </Container>
       </div> 
       <Container>
-        <h2 id="custom-font-2"> Welcome to the quizes. Choose which quiz  you would like to play below:</h2>
+        <h2 id="custom-font-2"> Welcome to the quizzes. Choose which quiz  you would like to play below:</h2>
         </Container>
 
 
