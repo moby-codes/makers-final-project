@@ -1,15 +1,16 @@
 body {
   margin: 0;
+  background-color: rgb(255, 159, 80) !important;
   font-family: 'The Girl Next Door', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* code {
-  font-family: 'The Girl Next Door', cursive;
-} */
+#root {
+  height: 100%;
+}
 
-#zorp {
+#opening-text {
   font-family: 'Chelsea Market', cursive;
   font-size: 1.7em;
   text-align: center;
@@ -57,9 +58,9 @@ body {
   font-weight: normal;
 }
 
-#root{
+/* #root{
   background-color: rgb(255, 159, 80);
-}
+} */
 
 .title {
   text-align: center;
@@ -78,11 +79,13 @@ body {
   width: 75%;
   margin: auto;
 }
+
 .footer {
-  height: 32px;
-  padding: 8px;
+  text-align: center;
+  bottom: 0;
   position: fixed;
 }
+
 .story-question {
   padding-bottom: 25px;
   width: 65%;
