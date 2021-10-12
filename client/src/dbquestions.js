@@ -2,8 +2,8 @@ const axios = require("axios");
 
 const axiosCall = async () => {
   const result = await axios("http://localhost:5000/stories/");
-  console.log(result.data);
-  return result.data[0];
+  //console.log(result.data);
+  return result.data;
 };
 
 const questions = axiosCall();
