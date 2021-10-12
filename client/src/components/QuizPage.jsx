@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Story from "./Story";
 import Question from "./Question";
 import {dummyQ} from '../dummyQ.js'
@@ -9,12 +9,11 @@ export const QuizPage = ({currentQuiz, quizTitle, currentQuestion, setCurrentQue
 
   const [questions, setQuestions] = useState([dummyQ]);
   
-  React.useEffect(() => {
+  useEffect(() => {
     fetchData(currentQuiz).then(res => {
       setQuestions(res.data)
     })
   }, [] )
-
 
   return (
     <>
