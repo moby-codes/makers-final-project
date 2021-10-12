@@ -15,7 +15,7 @@ import axios from 'axios';
             .get("http://localhost:5000/stories/")
             .then((response) => {
               console.log('hellllllooooooo')
-              setState({ stories: response.data });
+              // setState({ stories: response.data });
             })
             .catch(function (error) {
               console.log(error);
