@@ -33,6 +33,20 @@ body {
   font-family: 'Fredericka the Great', cursive;
 }
 
+#about-page-title {
+  font-family: helvetica;
+  font-size: 1.2em;
+  padding-top: 20px;
+}
+
+#about-page-non-title {
+  font-family: helvetica;
+  font-size: 0.95em;
+  text-align: left;
+  padding-top: 20px;
+  font-weight: normal;
+}
+
 #root{
   background-color: rgb(255, 159, 80);
 }
@@ -82,14 +96,12 @@ body {
   text-align: center;
 }
 
-.about_us_paragraph {
+/* .about_us_paragraph {
   text-align: left;
   padding-top: 20px;
-  color: rgb(168, 18, 8)
-}
+} */
 
 .about_us_title {
   padding-top: 20px;
   text-align: center;
-  color: rgb(0, 167, 8);
 }
