@@ -23,10 +23,10 @@ const QuizDashboard = () => {
       <div className="qcard">
         <Container>
           <div class="card text-white bg-success mb-3">
-            <div class="card-header custom-font">Theme: Space</div>
+            <div class="card-header custom-font-2">Theme: Space</div>
               <div class="card-body">
                 <h4 class="card-title custom-font-2"><strong>Space Blast</strong></h4>
-                <p class="card-text custom-font">Welcome to Space, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
+                <p class="card-text custom-font-2">Welcome to Space, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
                 <Link to="/spacequiz">
                   <div className="QcardButton">
                     <button type="button" class="custom-font-2 btn btn-warning">Take Quiz</button> 
@@ -58,10 +58,10 @@ const QuizDashboard = () => {
       <Container>
       
           <div class="card text-white bg-warning mb-3">
-            <div class="card-header custom-font-3">Theme: Jungle</div>
+            <div class="card-header custom-font-2">Theme: Jungle</div>
               <div class="card-body">
                 <h4 class="card-title custom-font-2"><strong>Jungle Quiz</strong></h4>
-                <p class="card-text custom-font-3">Welcome to the jungle, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
+                <p class="card-text custom-font-2">Welcome to the jungle, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
                 <Link to="/junglequiz">
                   <div className="QcardButton">
                     <button type="button" class="custom-font-2 btn btn-success">Take Quiz</button> 

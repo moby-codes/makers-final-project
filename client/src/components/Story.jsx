@@ -14,7 +14,7 @@ const Story = ({currentQuestion}) => {
           <h4 class="custom-font-2 card-title">{questions[currentQuestion].storyTitle}</h4>
           <h6 class="custom-font-2 card-subtitle mb-2">{questions[currentQuestion].storySubtitle}</h6>
           {questions[currentQuestion].storyText.map((element) => (
-            <p class="custom-font card-text">{element.text}</p>
+            <p class="custom-font-2 card-text">{element.text}</p>
 	        ))}
       </div>
     </div>

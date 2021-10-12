@@ -33,7 +33,7 @@ export const Question = ({currentQuestion, setCurrentQuestion}) => {
             <div class="card border-warning mb-3">
               <div class="custom-font-2 card-header">Question Number {currentQuestion + 1}</div>
               <div class="card-body">
-                <h4 class="custom-font card-title">{questions[currentQuestion].questionText}</h4>
+                <h4 class="custom-font-2 card-title">{questions[currentQuestion].questionText}</h4>
                 <div class="d-grid gap-2">
                   {/*index not needed ?*/} 
                   {questions[currentQuestion].answerOptions.map((answerOption, index) => (

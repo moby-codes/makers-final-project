@@ -33,9 +33,9 @@ body {
   font-family: 'Fredericka the Great', cursive;
 }
 
-/* #root{
+#root{
   background-color: rgb(255, 159, 80);
-} */
+}
 
 .title {
   text-align: center;
