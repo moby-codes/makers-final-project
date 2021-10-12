@@ -1,18 +1,20 @@
+import axios from 'axios'
 import React from 'react'
 import { useState, useEffect } from "react";
 import Story from "./Story";
 import Question from "./Question";
-import fetchData from '../dbquestions.js'
 
 export const QuizPage = ({currentQuiz, quizTitle, currentQuestion, setCurrentQuestion}) => {
 
   const [questions, setQuestions] = useState([]);
   
   useEffect(() => {
-    fetchData(currentQuiz).then(res => {
-      setQuestions(res.data)
-    })
-  }, [] )
+    async function fetchData() {
+      const result = await axios("http://localhost:5000/" + currentQuiz);
+      setQuestions(result.data);
+    }
+    fetchData()
+  }, [currentQuiz]);
 
   return (
     <>
