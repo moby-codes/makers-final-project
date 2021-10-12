@@ -15,17 +15,13 @@ export const Header = () => {
             </button>
 
           <div class="collapse navbar-collapse" id="navbarColor01">
-              <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item ml-auto">
-                  <span class="visually-hidden">(current)</span>
+                <span class="visually-hidden">(current)</span>
               </li>
-             
-                <li class="nav-item">
-                 <Link to="/about" class="custom-font-2 nav-link">About</Link>
-                
-                </li>
-
-
+              <li class="nav-item">
+                <Link to="/about" class="custom-font-2 nav-link">About</Link>
+              </li>
             </ul>
           </div>
         </div>
