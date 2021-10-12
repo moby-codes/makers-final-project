@@ -1,15 +1,40 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'The Girl Next Door', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* code {
+  font-family: 'The Girl Next Door', cursive;
+} */
+
+.custom-font {
+  font-family: 'The Girl Next Door', cursive;
+}
+
+#custom-font {
+  font-family: 'The Girl Next Door', cursive;
+}
+
+.custom-font-2 {
+  font-family: 'Chelsea Market', cursive;
+}
+
+#custom-font-2 {
+  font-family: 'Chelsea Market', cursive;
+}
+
+.custom-font-3 {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+#custom-font-3 {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+#root{
+  background-color: rgb(255, 159, 80);
 }
 
 .title {
@@ -46,10 +71,10 @@ code {
   display: inline-block;
   color: rgb(222, 12, 12);
 }
+
 .quizQuestions {
   width: 75%;
   margin: auto;
-
   background: rgb(222, 12, 12) !important;
 }
 

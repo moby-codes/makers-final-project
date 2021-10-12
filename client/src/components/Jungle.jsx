@@ -9,7 +9,7 @@ export const Jungle = () => {
 
   return (
     <>
-      <div className="title"> <h1> Mungul in the Jungle Quiz </h1> </div>
+      <div className="title"> <h1 id="custom-font-2"> Mungul in the Jungle Quiz </h1> </div>
  
       <Story currentQuestion={currentQuestion} />
 
