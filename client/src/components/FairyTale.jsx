@@ -1,22 +1,29 @@
 import React from 'react'
 import { useState } from "react";
-import Story from "./Story";
-import Question from "./Question";
-
+import {dummyQ} from '../dummyQ.js'
+import fetchData from '../dbquestions.js'
+import QuizPage from './QuizPage'
 
 export const FairyTale = () => {
+   const quizTitle = useState('FairyTale Quiz')
+   const currentQuiz = 'fairytale'
    const [currentQuestion, setCurrentQuestion] = useState(0);
+   const [questions, setQuestions] = useState([dummyQ]);
+  
+  React.useEffect(() => {
+    fetchData(currentQuiz).then(res => {
+      setQuestions(res.data)
+    })
+  }, [] )
 
   return (
     <>
-      <div className="title"> <h1> Goldilocks and the three hackers </h1> </div>
- 
-      <Story currentQuestion={currentQuestion} />
-
-      <Question
-        currentQuestion={currentQuestion}
-        setCurrentQuestion={setCurrentQuestion}/>
-            
+    <QuizPage
+      quizTitle={quizTitle}
+      currentQuestion={currentQuestion}
+      setCurrentQuestion={setCurrentQuestion}
+      questions={questions}
+    />
     </>
   )
 }
