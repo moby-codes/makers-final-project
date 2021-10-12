@@ -10,7 +10,7 @@ import SpaceQuiz from "./components/SpaceQuiz"
 import About from "./components/About"
 import Jungle from "./components/Jungle"
 import FairyTale from "./components/FairyTale"
-
+import Connection from "./db_axios"
 
 export default function App() {
  
@@ -36,12 +36,15 @@ export default function App() {
         <Route path="/about" component={About} exact />
         <Route path="/junglequiz" component={Jungle} exact />
         <Route path="/fairytalequiz" component={FairyTale} exact />
-
-        
       </Container> 
       <footer className="footer--pin"> <Footer /> </footer>
 
       </Router>
+
+
+      <Connection />
+
+
     </>
   );
 }
