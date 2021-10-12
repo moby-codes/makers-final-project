@@ -9,6 +9,12 @@ body {
   font-family: 'The Girl Next Door', cursive;
 } */
 
+#zorp {
+  font-family: 'Chelsea Market', cursive;
+  font-size: 1.7em;
+  text-align: center;
+}
+
 .custom-font {
   font-family: 'The Girl Next Door', cursive;
 }
