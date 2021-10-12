@@ -9,3 +9,5 @@ test("renders App and navigates to About page when clicked", () => {
   
   expect(aboutEl.textContent).toBe("Code4Fun")
 });
+
+
