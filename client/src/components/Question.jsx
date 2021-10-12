@@ -8,7 +8,8 @@ export const Question = ({currentQuestion, setCurrentQuestion}) => {
   
   const [showScore, setShowScore] = useState(false)
   const [score, setScore] = useState(0);
-  console.log(questions[0])
+  // console.log(questions)
+
 
   const handleAnswerButtonClick = (isCorrect) => {
     if (isCorrect) {
