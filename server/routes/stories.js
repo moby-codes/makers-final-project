@@ -11,18 +11,7 @@ const dbo = require("../db/conn");
 // This help convert the id from string to ObjectId for the _id.
 const ObjectId = require("mongodb").ObjectId;
 
-// This section will help you get a list of all the stories.
-storyRoutes.route("/stories").get(function (req, res) {
-  let db_connect = dbo.getDb("storyDatabase");
-  db_connect
-    .collection("stories")
-    .find({})
-    .toArray(function (err, result) {
-      if (err) throw err;
-      res.json(result);
-    });
-});
-
+// This section routes to the different story DB collections
 storyRoutes.route("/space").get(function (req, res) {
   let db_connect = dbo.getDb("storyDatabase");
   db_connect
@@ -38,6 +27,17 @@ storyRoutes.route("/fairytale").get(function (req, res) {
   let db_connect = dbo.getDb("storyDatabase");
   db_connect
     .collection("fairytale")
+    .find({})
+    .toArray(function (err, result) {
+      if (err) throw err;
+      res.json(result);
+    });
+});
+
+storyRoutes.route("/jungle").get(function (req, res) {
+  let db_connect = dbo.getDb("storyDatabase");
+  db_connect
+    .collection("jungle")
     .find({})
     .toArray(function (err, result) {
       if (err) throw err;
