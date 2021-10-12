@@ -1,9 +1,20 @@
 import React from 'react'
-// import { useState } from "react";
+import { useState } from "react";
 import Story from "./Story";
 import Question from "./Question";
+import {dummyQ} from '../dummyQ.js'
+import fetchData from '../dbquestions.js'
 
-export const QuizPage = ({quizTitle, currentQuestion, questions, setCurrentQuestion}) => {
+export const QuizPage = ({currentQuiz, quizTitle, currentQuestion, setCurrentQuestion}) => {
+
+  const [questions, setQuestions] = useState([dummyQ]);
+  
+  React.useEffect(() => {
+    fetchData(currentQuiz).then(res => {
+      setQuestions(res.data)
+    })
+  }, [] )
+
 
   return (
     <>
