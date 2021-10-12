@@ -23,6 +23,28 @@ storyRoutes.route("/stories").get(function (req, res) {
     });
 });
 
+storyRoutes.route("/space").get(function (req, res) {
+  let db_connect = dbo.getDb("storyDatabase");
+  db_connect
+    .collection("space")
+    .find({})
+    .toArray(function (err, result) {
+      if (err) throw err;
+      res.json(result);
+    });
+});
+
+storyRoutes.route("/fairytale").get(function (req, res) {
+  let db_connect = dbo.getDb("storyDatabase");
+  db_connect
+    .collection("fairytale")
+    .find({})
+    .toArray(function (err, result) {
+      if (err) throw err;
+      res.json(result);
+    });
+});
+
 // This section will help you get a single story by id
 storyRoutes.route("/stories/:id").get(function (req, res) {
   let db_connect = dbo.getDb();

@@ -1,40 +1,12 @@
 import React from 'react'
 import { useState } from "react";
 import { Container } from "react-bootstrap";
-// import { questions } from '../questions.js'
-import fetchData from '../dbquestions.js'
 
-export const Question = ({currentQuestion, setCurrentQuestion}) => {
+export const Question = ({currentQuestion, setCurrentQuestion, questions}) => {
   
   const [showScore, setShowScore] = useState(false)
   const [score, setScore] = useState(0);
-
-    const dummyQ = {
-    storyTitle: ``,
-    storySubtitle: ``,
-    storyText: [
-      {
-        text: ``,
-      },
-    ],
-    questionText: ``,
-    answerOptions: [
-      { answerText: ``, isCorrect: false },
-      { answerText: ``, isCorrect: false },
-      { answerText: ``, isCorrect: false },
-      { answerText: ``, isCorrect: false },
-    ],
-  };
-
-  const [questions, setQuestions] = useState([dummyQ]);
-
-  React.useEffect(() => {
-    fetchData().then(res => {
-      setQuestions(res.data)
-    })
-
-  }, [] )
-
+  
   const handleAnswerButtonClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1)

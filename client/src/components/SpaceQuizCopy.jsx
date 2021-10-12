@@ -1,11 +1,12 @@
 import React from 'react'
 import { useState } from "react";
+import Story from "./Story";
+import Question from "./Question";
 import {dummyQ} from '../dummyQ.js'
 import fetchData from '../dbquestions.js'
-import QuizPage from './QuizPage'
 
 export const SpaceQuiz = () => {
-   const quizTitle = useState('A voyage to the Moon')
+   const quizTitle = 'A voyage to the Moon'
    const currentQuiz = 'space'
    const [currentQuestion, setCurrentQuestion] = useState(0);
    const [questions, setQuestions] = useState([dummyQ]);
@@ -14,16 +15,20 @@ export const SpaceQuiz = () => {
     fetchData(currentQuiz).then(res => {
       setQuestions(res.data)
     })
+
   }, [] )
 
   return (
     <>
-    <QuizPage
-      quizTitle={quizTitle}
-      currentQuestion={currentQuestion}
-      setCurrentQuestion={setCurrentQuestion}
-      questions={questions}
-    />
+      <div className="title"> <h1> {quizTitle} </h1> </div>
+ 
+      <Story currentQuestion={currentQuestion}
+      questions={questions} />
+
+      <Question
+        currentQuestion={currentQuestion}
+        setCurrentQuestion={setCurrentQuestion}
+        questions={questions}/>
     </>
   )
 }

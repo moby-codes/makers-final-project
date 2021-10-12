@@ -1,9 +1,8 @@
 import React from 'react'
 import { Container } from "react-bootstrap";
-import { questions } from "../questions"
 
-const Story = ({currentQuestion}) => {
-
+const Story = ({currentQuestion, questions}) => {
+  
   return (
     <>
       <div className="story-card">
