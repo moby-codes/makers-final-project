@@ -33,6 +33,10 @@ body {
   font-family: 'Fredericka the Great', cursive;
 }
 
+.font-weight {
+  font-weight: normal;
+}
+
 #about-page-title {
   font-family: helvetica;
   font-size: 1.2em;
