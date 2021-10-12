@@ -1,5 +1,15 @@
 const axios = require("axios");
 
+// const axiosCall = async () => {
+//   const result = await axios("http://localhost:5000/stories/");
+//   //console.log(result.data);
+//   return result.data;
+// };
+
+// const questions = axiosCall();
+
+// export default questions;
+
 // const axiosCall = () => {
 //   axios
 //   .get("http://localhost:5000/stories/")
@@ -12,16 +22,9 @@ const axios = require("axios");
 //   // })
 // }
 
-async function questions() {
-  try {
-    const response = await axios.get('http://localhost:5000/stories/');
-    console.log(response);
-  } catch (error) {
-    console.error(error);
-  }
-}
+const fetchData = async () => {
+  const result = await axios("http://localhost:5000/stories/");
+  return result;
+};
 
-
-
-
-export default questions;
+export default fetchData;
