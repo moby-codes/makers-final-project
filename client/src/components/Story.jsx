@@ -2,11 +2,12 @@ import React from 'react'
 import { Container } from "react-bootstrap";
 
 const Story = ({currentQuestion, questions}) => {
-  
+
   return (
     <>
+    { (currentQuestion + 1) < questions.length && 
       <div className="story-card">
-
+      
     <Container>
       <div class="card bg-warning">
         <div class="card-body">
@@ -18,7 +19,9 @@ const Story = ({currentQuestion, questions}) => {
       </div>
     </div>
     </Container>
+  
     </div>
+    }
     </>
   )
 }
