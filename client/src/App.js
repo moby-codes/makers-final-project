@@ -34,9 +34,8 @@ export default function App() {
           <Route path="/junglequiz" component={Jungle} exact />
           <Route path="/fairytalequiz" component={FairyTale} exact />
         </Container>
-        <footer className="footer--pin">
-          {" "}
-          <Footer />{" "}
+        <footer>
+          <Footer />
         </footer>
       </Router>
     </>

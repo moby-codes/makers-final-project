@@ -83,7 +83,7 @@ body {
 .footer {
   text-align: center;
   bottom: 0;
-  position: fixed;
+  position: relative;
 }
 
 .story-question {
