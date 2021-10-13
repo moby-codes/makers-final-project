@@ -16,7 +16,7 @@ const QuizDashboard = () => {
         </Container>
       </div> 
       <Container>
-        <h2 id="custom-font-2"> Welcome to the quizzes. Choose which quiz  you would like to play below:</h2>
+        <h2 id="opening-text"> Welcome budding coder! We are delighted you have selected us to start your learning journey. Please select any story below to start your adventure into coding!</h2>
         </Container>
 
 
@@ -26,7 +26,7 @@ const QuizDashboard = () => {
             <div class="card-header custom-font-2">Theme: Space</div>
               <div class="card-body">
                 <h4 class="card-title custom-font-2"><strong>Space Blast</strong></h4>
-                <p class="card-text custom-font-2">Welcome to Space, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
+                <p class="font-weight card-text custom-font-2">Welcome to Space, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
                 <Link to="/spacequiz">
                   <div className="QcardButton">
                     <button type="button" class="custom-font-2 btn btn-warning">Take Quiz</button> 
@@ -43,7 +43,7 @@ const QuizDashboard = () => {
             <div class="card-header custom-font-2">Theme: Fairytales</div>
               <div class="card-body">
                 <h4 class="card-title custom-font-2"><strong>Fairytail Quiz</strong></h4>
-                <p class="card-text custom-font-2">details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
+                <p class="font-weight  card-text custom-font-2">Details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
                 <Link to="/fairytalequiz">
                   <div className="QcardButton">
                     <button type="button" class="custom-font-2 btn btn-danger">Take Quiz</button> 
@@ -61,7 +61,7 @@ const QuizDashboard = () => {
             <div class="card-header custom-font-2">Theme: Jungle</div>
               <div class="card-body">
                 <h4 class="card-title custom-font-2"><strong>Jungle Quiz</strong></h4>
-                <p class="card-text custom-font-2">Welcome to the jungle, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
+                <p class="font-weight card-text custom-font-2">Welcome to the jungle, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
                 <Link to="/junglequiz">
                   <div className="QcardButton">
                     <button type="button" class="custom-font-2 btn btn-success">Take Quiz</button> 
