@@ -19,7 +19,7 @@ export const Header = () => {
                 <span class="visually-hidden">(current)</span>
               </li>
               <li class="nav-item">
-               <Link to="/about" class="custom-font-2 nav-link">About</Link>
+                <Link to="/about" class="custom-font-2 nav-link">About</Link>
               </li>
             </ul>
           </div>

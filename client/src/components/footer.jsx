@@ -7,7 +7,7 @@ export const footer = () => {
       <footer> 
         <Container>
           <Row>
-            <Col className="text-center">
+            <Col className="footer">
               <span id="custom-font-2">
                 <p data-testid="footer">Copyright &copy; Code4Fun</p>
               </span>

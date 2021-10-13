@@ -30,9 +30,9 @@ export const questions = [
       { text: `2 + 2` },
       { text: `Or subtract:` },
       { text: `4 - 2` },
-      { text: 'Or even multiply and divide:' },
+      { text: "Or even multiply and divide:" },
       { text: `4 * 4` },
-      { text: `4 / 4` }
+      { text: `4 / 4` },
     ],
     questionText: ``,
     answerOptions: [
@@ -72,11 +72,15 @@ export const questions = [
       {
         text: `DIANE-1000 doesn’t just fly the rocket ship, but also takes care of the astronauts on board (the commander, the scientist, the flight engineer and you!) , including their meals.`,
       },
-      { text: `When you want to give the computer a number, you do it like this:` },
+      {
+        text: `When you want to give the computer a number, you do it like this:`,
+      },
       {
         text: `42`,
       },
-      { text: `If you put quotation marks around something - like “42” - the computer does not treat the value as a number, but like a word (or what the computer would call a string, but don’t worry about this yet). The computer can only make calculations with numbers, so make sure you enter them correctly or you might not get your dinner!` },
+      {
+        text: `If you put quotation marks around something - like “42” - the computer does not treat the value as a number, but like a word (or what the computer would call a string, but don’t worry about this yet). The computer can only make calculations with numbers, so make sure you enter them correctly or you might not get your dinner!`,
+      },
     ],
     questionText: `How would you tell the computer how many astronauts are on board so that it can prepare the correct number of meals?`,
     answerOptions: [
@@ -105,7 +109,7 @@ export const questions = [
       { answerText: `land at 1.5`, isCorrect: false },
     ],
   },
-   {
+  {
     storyTitle: `Exploring the Moon`,
     storySubtitle: `Comparison operators`,
     storyText: [
@@ -116,9 +120,13 @@ export const questions = [
       {
         text: `landing_zone = 1.5`,
       },
-      { text: `What if we want to check if something is the same as something else? For example, what if we wanted to check that the landing zone was set to the correct sector? The following code will give you the answer:` },
+      {
+        text: `What if we want to check if something is the same as something else? For example, what if we wanted to check that the landing zone was set to the correct sector? The following code will give you the answer:`,
+      },
       { text: `landing_zone == 1.5` },
-      { text: `As we set the landing zone to 1.5, the computer will say ‘true’. If we entered landing_zone == 2.5 (or anything that isn’t 1.5) the computer will say ‘false’.` },
+      {
+        text: `As we set the landing zone to 1.5, the computer will say ‘true’. If we entered landing_zone == 2.5 (or anything that isn’t 1.5) the computer will say ‘false’.`,
+      },
     ],
     questionText: `This is our astronauts' first time on the moon. To understand what it is made of we need to collect samples and give them to our computer to process. Which instruction would the computer display true if the sample was cheese ?`,
     answerOptions: [
@@ -128,26 +136,26 @@ export const questions = [
       { answerText: `sample + “cheese”`, isCorrect: false },
     ],
   },
-
-  //  {
-  //   storyTitle: ``,
-  //   storySubtitle: ``,
-  //   storyText: [
-  //     {
-  //       text: ``,
-  //     },
-  //     { text: `` },
-  //     {
-  //       text: ``,
-  //     },
-  //     { text: `` },
-  //   ],
-  //   questionText: ``,
-  //   answerOptions: [
-  //     { answerText: ``, isCorrect: true },
-  //     { answerText: ``, isCorrect: false },
-  //     { answerText: ``, isCorrect: false },
-  //     { answerText: ``, isCorrect: false },
-  //   ],
-  // },
 ];
+
+//  {
+//   storyTitle: ``,
+//   storySubtitle: ``,
+//   storyText: [
+//     {
+//       text: ``,
+//     },
+//     { text: `` },
+//     {
+//       text: ``,
+//     },
+//     { text: `` },
+//   ],
+//   questionText: ``,
+//   answerOptions: [
+//     { answerText: ``, isCorrect: true },
+//     { answerText: ``, isCorrect: false },
+//     { answerText: ``, isCorrect: false },
+//     { answerText: ``, isCorrect: false },
+//   ],
+// },
