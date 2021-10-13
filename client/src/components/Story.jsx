@@ -5,7 +5,13 @@ const Story = ({currentQuestion, questions, showScore}) => {
 
   return (
     <b>
-      {showScore ? (<h1>Well Done !!!!</h1>) : (
+      {showScore ? (
+      
+      
+      <h1>Well Done !!!!</h1>
+      
+      
+      ) : (
       <>
         <div className="story-card">
         <Container>
