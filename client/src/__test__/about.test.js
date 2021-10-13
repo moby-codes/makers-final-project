@@ -11,7 +11,7 @@ test("renders title", () => {
   const component = render(<About />);
   const aboutEl = component.getByTestId("aboutTitle")
   
-  expect(aboutEl.textContent).toBe("Code4Fun")
+  expect(aboutEl.textContent).toBe("About")
 });
 
 test("renders headings", () => {
