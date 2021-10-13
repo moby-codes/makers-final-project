@@ -9,7 +9,7 @@ export const footer = () => {
           <Row>
             <Col className="footer">
               <span id="custom-font-2">
-                Copyright &copy; Code4Fun
+                <p data-testid="footer">Copyright &copy; Code4Fun</p>
               </span>
             </Col>
           </Row>
