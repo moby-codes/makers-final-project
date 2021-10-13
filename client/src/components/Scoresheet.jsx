@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Scoresheet = ({results}) => {
 
@@ -13,6 +14,11 @@ return (
       <h3 class="custom-font-2">Question {index +1}: Bad luck - try again next time</h3>
     )}
   )}
+    <Link to='/'>
+        <div className='returnButton'>
+          <button type="button"> Return to Home </button>
+        </div>
+    </Link>
   </div>
   </>
 )

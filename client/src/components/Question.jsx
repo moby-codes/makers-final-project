@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from "react";
 import { Container } from "react-bootstrap";
-import { Link } from 'react-router-dom'
 import Scoresheet from "./Scoresheet";
 
 export const Question = ({currentQuestion, setCurrentQuestion, questions, showScore, setShowScore}) => {
@@ -38,11 +37,7 @@ export const Question = ({currentQuestion, setCurrentQuestion, questions, showSc
         <Scoresheet 
           results={results}
         />  
-        <Link to='/'>
-        <div className='returnButton'>
-          <button type="button"> Return to Home </button>
-        </div>
-        </Link>
+     
       </Container>
     ) : (
       <>
