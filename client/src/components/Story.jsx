@@ -6,11 +6,9 @@ const Story = ({currentQuestion, questions, showScore}) => {
   return (
     <b>
       {showScore ? (
-      
-      
-      <h1>Well Done !!!!</h1>
-      
-      
+      <div className="score-section">
+      <h1 class="custom-font-2">Well Done!!!</h1>
+      </div>
       ) : (
       <>
         <div className="story-card">

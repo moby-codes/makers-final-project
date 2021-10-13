@@ -1,16 +1,24 @@
 import React from 'react'
 import { useState } from "react";
 import { Container } from "react-bootstrap";
-import { Link } from 'react-router-dom'
+import Scoresheet from "./Scoresheet";
 
 export const Question = ({currentQuestion, setCurrentQuestion, questions, showScore, setShowScore}) => {
   
+  const [results] = useState([]);
+
   const [score, setScore] = useState(0);
   
   const handleAnswerButtonClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1)
+      results.push(true); 
     }
+    else {
+      results.push(false);
+    }
+  
+
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion); 
@@ -26,11 +34,10 @@ export const Question = ({currentQuestion, setCurrentQuestion, questions, showSc
         <div className='score-section'>
           You scored {score} out of {questions.length}
         </div>
-        <Link to='/'>
-        <div className='returnButton'>
-          <button type="button"> Return to Home </button>
-        </div>
-        </Link>
+        <Scoresheet 
+          results={results}
+        />  
+     
       </Container>
     ) : (
       <>
