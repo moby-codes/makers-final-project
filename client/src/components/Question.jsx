@@ -1,13 +1,11 @@
 import React from 'react'
 import { useState } from "react";
 import { Container } from "react-bootstrap";
-import { questions } from '../questions.js'
 
-export const Question = ({currentQuestion, setCurrentQuestion}) => {
+export const Question = ({currentQuestion, setCurrentQuestion, questions, showScore, setShowScore}) => {
   
-  const [showScore, setShowScore] = useState(false)
   const [score, setScore] = useState(0);
-
+  
   const handleAnswerButtonClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1)

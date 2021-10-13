@@ -1,25 +1,20 @@
 import React from 'react'
 import { useState } from "react";
-import Story from "./Story";
-import Question from "./Question";
-
+import QuizPage from './QuizPage'
 
 export const SpaceQuiz = () => {
+   const quizTitle = useState('A voyage to the Moon')
+   const currentQuiz = 'space'
    const [currentQuestion, setCurrentQuestion] = useState(0);
-
+  
   return (
     <>
-      <div className="title"> <h1> Space Blast Quiz </h1> </div>
- 
-      <Story currentQuestion={currentQuestion} />
-
-      <Question
-        currentQuestion={currentQuestion}
-        setCurrentQuestion={setCurrentQuestion}/>
-      
-
-
-      
+    <QuizPage
+      currentQuiz={currentQuiz}
+      quizTitle={quizTitle}
+      currentQuestion={currentQuestion}
+      setCurrentQuestion={setCurrentQuestion}
+    />
     </>
   )
 }
