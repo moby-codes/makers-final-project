@@ -5,26 +5,23 @@ export const About = () => {
     <>
     <div className="about_us_title">
       <Container>
-        <h1> Code4Fun </h1>
+        <h1 id="custom-font-2"><strong>About</strong></h1>
       </Container>
     </div>
     <Container>
-        <h3> Background: </h3>
+        <h3 id="about-page-title"><strong>Background:</strong></h3>
     </Container>
     <div className="about_us_paragraph">
       <Container>
         <p>
-          <h3> This app was created to develop a fun learning enviroment for kids. Introducing fundamental coding concepts, 
-          Children can go through various quizzes and answer the given questions. With multiple themes to choose from, coding has never been this fun and simple before. Code4Fun, putting the FUN back into fundamental concepts</h3>
+          <h3 id="about-page-non-title"> This app was created to develop a fun learning environment for kids to learn basic coding fundamental concepts. 
+          Kids are free to pick and choose various fun themed stories that guide them in developing their coding knowledge. The stories contain fun quizzes that aim to test their understanding and bolster their confidence. With loads of themes to choose from, covering a wide variety of coding concepts, coding has never been this fun and simple before. <strong>Code4Fun</strong>, putting the FUN into coding fundamental concepts, for kids!</h3>
         </p>
       </Container>
     </div>
       <Container>
-        <h2>Founders:</h2>
-          <p>Mubashar Ali</p>
-          <p>Ian King</p>
-          <p>Ed Packard</p>
-          <p>Graeme Stirling</p>
+        <h3 id="about-page-title"><strong>Founders:</strong></h3>
+          <p id="about-page-non-title">Mubashar Ali, Ian King, Ed Packard, Graeme Stirling</p>
       </Container>
     </>
   )
