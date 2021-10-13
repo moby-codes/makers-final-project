@@ -5,7 +5,7 @@ export const footer = () => {
   return (
     <>
       <footer> 
-        <Container>
+        
           <Row>
             <Col className="footer">
               <span id="custom-font-2">
@@ -13,7 +13,7 @@ export const footer = () => {
               </span>
             </Col>
           </Row>
-        </Container>
+        
       </footer>
     </>
   )
