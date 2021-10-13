@@ -17,13 +17,18 @@ export const Question = ({currentQuestion, setCurrentQuestion, questions, showSc
       setShowScore(true);
     }
   };
-
+      
   return (
     <div>
     {showScore ? (
-      <div className='score-section'>
-        You scored {score} out of {questions.length}
-      </div>
+      <Container>
+        <div className='score-section'>
+          You scored {score} out of {questions.length}
+        </div>
+        <div className='returnButton'>
+          <button type="button"> Return to Home </button>
+        </div>
+      </Container>
     ) : (
       <>
         <Container>
