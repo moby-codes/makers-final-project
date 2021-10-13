@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import { Container } from "react-bootstrap";
+import { Link } from 'react-router-dom'
 
 export const Question = ({currentQuestion, setCurrentQuestion, questions, showScore, setShowScore}) => {
   
@@ -17,13 +18,20 @@ export const Question = ({currentQuestion, setCurrentQuestion, questions, showSc
       setShowScore(true);
     }
   };
-
+      
   return (
     <div>
     {showScore ? (
-      <div className='score-section'>
-        You scored {score} out of {questions.length}
-      </div>
+      <Container>
+        <div className='score-section'>
+          You scored {score} out of {questions.length}
+        </div>
+        <Link to='/'>
+        <div className='returnButton'>
+          <button type="button"> Return to Home </button>
+        </div>
+        </Link>
+      </Container>
     ) : (
       <>
         <Container>
@@ -33,8 +41,7 @@ export const Question = ({currentQuestion, setCurrentQuestion, questions, showSc
               <div class="card-body">
                 <h4 class="custom-font-2 card-title">{questions[currentQuestion].questionText}</h4>
                 <div class="d-grid gap-2">
-                  {/*index not needed ?*/} 
-                  {questions[currentQuestion].answerOptions.map((answerOption, index) => (
+                  {questions[currentQuestion].answerOptions.map((answerOption) => (
                     <button class="custom-font-2 btn btn-lg btn-primary" type="button" onClick={() => handleAnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                   ))}
                 </div>
