@@ -4,13 +4,13 @@ export const Scoresheet = ({results}) => {
 
 return (
   <>
+  <div className="score-section">  
   <h2> How did you do? </h2>
-  <div>
   {results.map((element, index) => 
     { return element ? (
-      <p>Question {index +1}: Correct!</p>
+      <h3 class="custom-font-2">Question {index +1}: Correct - congratulations!</h3>
     ) : (
-      <p>Question {index +1}: Bad luck - try again next time</p>
+      <h3 class="custom-font-2">Question {index +1}: Bad luck - try again next time</h3>
     )}
   )}
   </div>
