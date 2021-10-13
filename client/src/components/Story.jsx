@@ -3,12 +3,14 @@ import { Container } from "react-bootstrap";
 
 const Story = ({currentQuestion, questions, showScore}) => {
 
+console.log(showScore)
+
   return (
     <>
       <div className="story-card">
       
     <Container>
-      
+
       <div class="card bg-warning">
         <div class="card-body">
           <h4 class="custom-font-2 card-title">{questions[currentQuestion].storyTitle}</h4>
