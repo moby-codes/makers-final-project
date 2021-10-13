@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import { Container } from "react-bootstrap";
+import { Link } from 'react-router-dom'
 
 export const Question = ({currentQuestion, setCurrentQuestion, questions, showScore, setShowScore}) => {
   
@@ -25,9 +26,11 @@ export const Question = ({currentQuestion, setCurrentQuestion, questions, showSc
         <div className='score-section'>
           You scored {score} out of {questions.length}
         </div>
+        <Link to='/'>
         <div className='returnButton'>
           <button type="button"> Return to Home </button>
         </div>
+        </Link>
       </Container>
     ) : (
       <>
