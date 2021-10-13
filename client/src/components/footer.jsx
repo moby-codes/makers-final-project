@@ -1,11 +1,11 @@
 import React from 'react'
-import {Container, Row, Col } from "react-bootstrap";
+import {Row, Col } from "react-bootstrap";
 
 export const footer = () => {
   return (
     <>
       <footer> 
-        <Container>
+        
           <Row>
             <Col className="footer">
               <span id="custom-font-2">
@@ -13,7 +13,7 @@ export const footer = () => {
               </span>
             </Col>
           </Row>
-        </Container>
+        
       </footer>
     </>
   )
