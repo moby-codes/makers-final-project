@@ -3,8 +3,6 @@ import { Container } from "react-bootstrap";
 
 const Story = ({currentQuestion, questions, showScore}) => {
 
-console.log(showScore)
-
   return (
     <>
       <div className="story-card">
