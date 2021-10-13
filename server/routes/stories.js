@@ -23,10 +23,10 @@ storyRoutes.route("/space").get(function (req, res) {
     });
 });
 
-storyRoutes.route("/fairytale").get(function (req, res) {
+storyRoutes.route("/racecars").get(function (req, res) {
   let db_connect = dbo.getDb("storyDatabase");
   db_connect
-    .collection("fairytale")
+    .collection("racecars")
     .find({})
     .toArray(function (err, result) {
       if (err) throw err;
@@ -34,10 +34,10 @@ storyRoutes.route("/fairytale").get(function (req, res) {
     });
 });
 
-storyRoutes.route("/jungle").get(function (req, res) {
+storyRoutes.route("/fantasy").get(function (req, res) {
   let db_connect = dbo.getDb("storyDatabase");
   db_connect
-    .collection("jungle")
+    .collection("fantasy")
     .find({})
     .toArray(function (err, result) {
       if (err) throw err;

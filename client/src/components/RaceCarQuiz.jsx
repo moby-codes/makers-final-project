@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from "react";
 import QuizPage from './QuizPage'
 
-export const Jungle = () => {
-   const quizTitle = useState('Jungle Quiz')
-   const currentQuiz = 'jungle'
+export const Racecar = () => {
+   const quizTitle = useState('Racecar Quiz')
+   const currentQuiz = 'racecars'
    const [currentQuestion, setCurrentQuestion] = useState(0);
   
   return (
@@ -19,4 +19,4 @@ export const Jungle = () => {
   )
 }
 
-export default Jungle;
+export default Racecar;
