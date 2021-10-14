@@ -49,6 +49,10 @@ body {
   font-weight: normal;
 }
 
+.font-weight-bold {
+  font-weight: bold;
+}
+
 #about-page-title {
   font-family: helvetica;
   font-size: 1.2em;
@@ -70,12 +74,16 @@ body {
 .title {
   text-align: center;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 
 .score-section {
   text-align: center;
   font-size: 30pt;
+}
+
+.question-padding {
+  padding-bottom: 10px;
 }
 
 .story-card {

@@ -46,7 +46,7 @@ export const Question = ({currentQuestion, setCurrentQuestion, questions, showSc
             <div class="card border-warning mb-3">
               <div class="custom-font-2 card-header">Question Number {currentQuestion + 1}</div>
               <div class="card-body">
-                <h4 class="custom-font-2 card-title">{questions[currentQuestion].questionText}</h4>
+                <p class="question-padding custom-font-2 card-title">{questions[currentQuestion].questionText}</p>
                 <div class="d-grid gap-2">
                   {questions[currentQuestion].answerOptions.map((answerOption) => (
                     <button class="custom-font-2 btn btn-lg btn-primary" type="button" onClick={() => handleAnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}</button>

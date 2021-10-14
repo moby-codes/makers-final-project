@@ -15,10 +15,11 @@ const Story = ({currentQuestion, questions, showScore}) => {
         <Container>
           <div class="card bg-warning">
             <div class="card-body">
-              <h4 class="custom-font-2 card-title">{questions[currentQuestion].storyTitle}</h4>
-              <h6 class="custom-font-2 card-subtitle mb-2">You are learning about: {questions[currentQuestion].storySubtitle}</h6>
+              <h4 class="font-weight-bold custom-font-2 card-title">{questions[currentQuestion].storyTitle}</h4>
+              <h6 class="font-weight-bold custom-font-2 card-subtitle mb-2">You are learning about: {questions[currentQuestion].storySubtitle}</h6>
+              <br />
               {questions[currentQuestion].storyText.map((element) => (
-                <p class="custom-font-2 card-text">{element.text}</p>
+                <p class="font-weight custom-font-2 card-text">{element.text}</p>
               ))}
           </div>
         </div>
