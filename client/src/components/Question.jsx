@@ -42,9 +42,9 @@ export const Question = ({currentQuestion, setCurrentQuestion, questions, showSc
       <>
         <Container>
           <div className="quizQuestions">
-            <div class="card border-warning mb-3">
+            <div class="question-body card mb-3">
               <div class="custom-font-2 card-header">Question Number {currentQuestion + 1}</div>
-              <div class="card-body">
+              <div class="question-body card-body">
                 <p class="question-padding custom-font-2 card-title">{questions[currentQuestion].questionText}</p>
                 <div class="d-grid gap-2">
                   {questions[currentQuestion].answerOptions.map((answerOption) => (
