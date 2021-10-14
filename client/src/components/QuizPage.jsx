@@ -19,7 +19,7 @@ export const QuizPage = ({currentQuiz, quizTitle, currentQuestion, setCurrentQue
 
   return (
     <>
-      <div className="title"> <h1> {quizTitle} </h1> </div>
+      <div className="title"> <h1 class="custom-font-2"> {quizTitle} </h1> </div>
       { questions.length > 0 && 
           <Story 
           currentQuestion={currentQuestion}
