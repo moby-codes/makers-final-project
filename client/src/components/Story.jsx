@@ -1,13 +1,15 @@
 import React from 'react'
 import { Container } from "react-bootstrap";
 
-const Story = ({currentQuestion, questions, showScore}) => {
+const Story = ({currentQuestion, questions, score, showScore}) => {
 
   return (
     <b>
       {showScore ? (
       <div className="score-section">
-      <h1 class="custom-font-2">Well Done!!!</h1>
+      {score > (questions.length /2) ? (
+      <h1 class="custom-font-2">Well Done!!!</h1>) : (<h1 class="custom-font-2">Better luck next time!</h1>) 
+    }
       </div>
       ) : (
       <>
