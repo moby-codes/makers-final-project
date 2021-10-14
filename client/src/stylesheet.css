@@ -65,7 +65,9 @@ body {
   font-weight: normal;
 }
 
-
+.button-bg {
+  background: rgb(30, 223, 56) !important;
+}
 
 .title {
   text-align: center;
