@@ -20,10 +20,15 @@ export const About = () => {
         </p>
       </Container>
     </div>
-      <Container>
+
+      <div className="founders">
+        <Container>
         <h3 data-testid="aboutHeading2" id="about-page-title"><strong>Founders:</strong></h3>
-          <p data-testid="aboutFounders" id="about-page-non-title">Mubashar Ali, Ian King, Ed Packard, Graeme Stirling</p>
-      </Container>
+        <p data-testid="aboutFounders" id="about-page-non-title">Mubashar Ali, Ian King, Ed Packard, Graeme Stirling</p>
+        </Container>
+      
+      </div>
+
     </>
   )
 }
