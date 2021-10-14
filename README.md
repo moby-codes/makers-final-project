@@ -2,10 +2,16 @@
 
 ## description
 
+This is the third and last engineering project from the Makers Academy 12 week bootcamp. This group was formed of individuals interested in creating a learning platform for teaching coding in a fun way. During discussion about the direction of our project we settled on creating a quiz with vibrant colour themes and engaging stories. The questions would be a agnostic in laguage as much as possible to introduce coding at a very fundamental level. 
 
 
+## Technologies used
 
+For our front-end of application we have used React 
 
+Back-End MongoDB/Express 
+
+testing with Jest and the react testing library 
 
 
 ## initial setup 
