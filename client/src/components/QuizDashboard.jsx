@@ -19,8 +19,8 @@ const fantasyText = "Set off on an adventure to defeat the evil wizard with your
         <div> </div>
       <Container>
         <h2 id="custom-font-2-centre">Welcome budding coder!</h2> <br/>
-        <h2 id="custom-font-2-centre">We are delighted you have selected us to start your learning journey. 
-        Please select any story below to start your adventure into coding!</h2>
+        <h2 id="custom-font-2-centre">We are delighted you have chosen Code4Fun.</h2>
+        <h2 id="custom-font-2-centre">Please select any story below to start your coding adventure...</h2>
       </Container>
     <br />
       <div className="qcard">
