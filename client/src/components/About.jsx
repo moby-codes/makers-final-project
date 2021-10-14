@@ -16,10 +16,17 @@ export const About = () => {
         <p>
           <h3 data-testid="aboutDetails" id="about-page-non-title"> This app was created to provide a fun learning environment for children to learn fundamental coding concepts. 
           Children using this site can choose from various themed stories to guide them in developing their coding knowledge. The stories also include quizzes to test their understanding and boost their confidence. With several themes to choose from, covering a wide variety of coding concepts, coding has never been this fun and simple before.</h3>
-          <h3 id="about-page-non-title"><strong>Code4Fun</strong>, putting the FUN into coding fundamental concepts!</h3>
         </p>
       </Container>
     </div>
+
+      <div className="aboutusquote"> </div>
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p class="mb-0">Code4Fun, putting the FUN into coding fundamental concepts!</p>
+        </blockquote> 
+      </figure>
+
 
       <div className="founders">
         <Container>
