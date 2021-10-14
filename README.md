@@ -33,9 +33,9 @@ followed by the command
 
 ''' npm test ''' 
 
-click 'a' to run all tests and the terminal will run all test suites. 
+click 'a' to run all tests in this directory and the terminal will run all test suites. 
 
-## Serving up the application 
+## Serving the application 
 
 Open up the client folder in the terminal 
 
