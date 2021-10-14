@@ -15,7 +15,7 @@ return (
       <h3 class="custom-font-2">Question {index +1}: Bad luck - try again next time</h3>
     )}
   )}
-    <Link to='/'>
+    <Link to='/quiz-dashboard'>
         <div className='returnButton'>
           <br />
           <button class="button-bg" type="button"> Return to Quizzes </button>
