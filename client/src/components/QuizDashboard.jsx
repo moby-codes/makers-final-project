@@ -32,7 +32,7 @@ const fantasyText = "Set off on an adventure to defeat the evil wizard with your
             <div class="card-header custom-font-2">Theme: Space</div>
               <div class="card-body">
                 <h4 class="card-title custom-font-2"><strong>A voyage to the Moon</strong></h4>
-                <p class="card-text custom-font-2">{spaceText}</p>
+                <p class="font-weight card-text custom-font-2">{spaceText}</p>
                 <Link to="/spacequiz">
                   <div className="QcardButton">
                     <button type="button" class="custom-font-2 btn btn-warning">{buttonText}</button> 
@@ -50,7 +50,7 @@ const fantasyText = "Set off on an adventure to defeat the evil wizard with your
           <div class="card-header custom-font-2">Theme: Racing Cars</div>
             <div class="card-body">
               <h4 class="card-title custom-font-2"><strong>Formula Fun</strong></h4>
-              <p class="card-text custom-font-2">{raceCarText}</p>                
+              <p class="font-weight card-text custom-font-2">{raceCarText}</p>                
               <Link to="/racecarsquiz">
                 <div className="QcardButton">
                   <button type="button" class="custom-font-2 btn btn-success">{buttonText}</button> 
@@ -67,7 +67,7 @@ const fantasyText = "Set off on an adventure to defeat the evil wizard with your
             <div class="card-header custom-font-2">Theme: Fantasy</div>
               <div class="card-body">
                 <h4 class="card-title custom-font-2"><strong>An epic Quest</strong></h4>
-                <p class="card-text custom-font-2">{fantasyText}</p>
+                <p class="font-weight card-text custom-font-2">{fantasyText}</p>
                 <Link to="/fantasyquiz">
                   <div className="QcardButton">
                     <button type="button" class="custom-font-2 btn btn-danger">{buttonText}</button> 
