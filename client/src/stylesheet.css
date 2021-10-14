@@ -143,10 +143,11 @@ body {
 .homepagetxt {
   text-align: left;
   padding-top: 100px;
-  font-size: 1.2em;
+  font-size: 150%;
 }
 
 .image3 {
   padding-left: 310px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
