@@ -45,6 +45,12 @@ body {
   font-family: "Fredericka the Great", cursive;
 }
 
+.custom-font-4 {
+  font-family: "Chelsea Market", cursive;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .font-weight {
   font-weight: normal;
 }
@@ -76,6 +82,8 @@ body {
 .score-section {
   text-align: center;
   font-size: 30pt;
+  padding-top: 35px;
+
 }
 
 .story-card {
@@ -123,3 +131,6 @@ body {
   padding-top: 20px;
   text-align: center;
 }
+
+
+
