@@ -1,25 +1,25 @@
-# Engineering Project 3: coding quiz
+# Engineering Project 3: Team Code4Fun
+
+Contributors: Ian King, Mubashar Ali, Ed Packard and Graeme Stirling. 
 
 ## description
 
-This is the third and last engineering project from the Makers Academy 12 week bootcamp. This group was formed of individuals interested in creating a learning platform for teaching coding in a fun way. During discussion about the direction of our project we settled on creating a quiz with vibrant colour themes and engaging stories. The questions would be a agnostic in laguage as much as possible to introduce coding at a very fundamental level. 
-
+This is the third and last engineering project from the Makers Academy 12 week bootcamp. This group was formed of individuals interested in creating a learning platform for teaching coding in a fun way. During discussion about the direction of our project we settled on creating a quiz with vibrant colour themes and engaging stories. The questions would not be designed for a specific langauge and instead focus on teaching basic fundamentals.  
 
 ## Technologies used
 
 For our front-end of application we have used React 
 
-Back-End MongoDB/Express 
+Back End: Using Express and MongoDB as our database  
 
-testing with Jest and the react testing library 
-
+Testing with Jest and the react testing library 
 
 ## initial setup 
 
 clone this repo 
 open folder inside your code editor and run the following command 
 
-``` npm install ```` 
+``` npm install ```
 
 Then open the client folder and run the commnad again. 
 
