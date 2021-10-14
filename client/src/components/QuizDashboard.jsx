@@ -2,7 +2,8 @@ import React from 'react'
 import { Container } from "react-bootstrap";
 // import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
-import Title from "./Title"
+import 'animate.css';
+
 
 const QuizDashboard = () => {
 
@@ -14,20 +15,17 @@ const fantasyText = "Set off on an adventure to defeat the evil wizard with your
 
   return (
     <>
-
-<div className="title">
-        <Container>
-          <Title />
-        </Container>
-      </div> 
+      <br />
+        <div> </div>
       <Container>
-        <h2 id="custom-font-2-centre">Welcome budding coder!</h2>
-        <h2 id="custom-font-2-centre">We are delighted you have selected Code4Fun for your learning journey. 
+        <h2 id="custom-font-2-centre">Welcome budding coder!</h2> <br/>
+        <h2 id="custom-font-2-centre">We are delighted you have selected us to start your learning journey. 
         Please select any story below to start your adventure into coding!</h2>
-        </Container>
-
+      </Container>
+    <br />
       <div className="qcard">
         <Container>
+        <div class="animate__animated animate__fadeInLeft" >
           <div class="card text-white bg-success mb-3">
             <div class="card-header custom-font-2">Theme: Space</div>
               <div class="card-body">
@@ -40,12 +38,14 @@ const fantasyText = "Set off on an adventure to defeat the evil wizard with your
                 </Link>
             </div>
           </div>
+          </div>
         </Container>
       </div>
 
 
       <div className="qcard">
       <Container>      
+      <div class="animate__animated animate__jackInTheBox" >
         <div class="card text-white bg-warning mb-3">
           <div class="card-header custom-font-2">Theme: Racing Cars</div>
             <div class="card-body">
@@ -58,11 +58,13 @@ const fantasyText = "Set off on an adventure to defeat the evil wizard with your
               </Link>
           </div>
         </div>
+        </div>
       </Container>
       </div>
 
       <div className="qcard">
         <Container>
+        <div class="animate__animated animate__fadeInRight" > 
           <div class="card text-white bg-info mb-3">
             <div class="card-header custom-font-2">Theme: Fantasy</div>
               <div class="card-body">
@@ -75,6 +77,7 @@ const fantasyText = "Set off on an adventure to defeat the evil wizard with your
                 </Link>
             </div>
           </div>
+      </div>
         </Container>
       </div>
 

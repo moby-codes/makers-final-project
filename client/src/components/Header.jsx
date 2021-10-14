@@ -19,6 +19,9 @@ export const Header = () => {
                 <span class="visually-hidden">(current)</span>
               </li>
               <li class="nav-item">
+                <Link to="/quiz-dashboard" class="custom-font-2 nav-link">Quiz</Link>
+              </li>
+              <li class="nav-item">
                 <Link to="/about" class="custom-font-2 nav-link">About</Link>
               </li>
             </ul>
