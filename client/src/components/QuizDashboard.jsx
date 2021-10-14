@@ -9,7 +9,7 @@ const QuizDashboard = () => {
 const buttonText = "Start Quiz"
 const spaceText = "Learn how to program DIANE-1000, a rocket ship computer, as you blast off into space. You will find out about variables, operators and data types."
 const raceCarText = "Program a racing car's computer so that your team can win the race. You will learn about variables, boolean logic, if/else statements, and while loops."
-const fantasyText = "TBC"
+const fantasyText = "Set off on an adventure to defeat the evil wizard with your mastery of coding concepts. You will cover loops and collections in this story."
 
 
   return (
@@ -22,7 +22,7 @@ const fantasyText = "TBC"
       </div> 
       <Container>
         <h2 id="custom-font-2-centre">Welcome budding coder!</h2>
-        <h2 id="custom-font-2-centre">We are delighted you have selected us to start your learning journey. 
+        <h2 id="custom-font-2-centre">We are delighted you have selected Code4Fun for your learning journey. 
         Please select any story below to start your adventure into coding!</h2>
         </Container>
 
@@ -66,7 +66,7 @@ const fantasyText = "TBC"
           <div class="card text-white bg-info mb-3">
             <div class="card-header custom-font-2">Theme: Fantasy</div>
               <div class="card-body">
-                <h4 class="card-title custom-font-2"><strong>TBC</strong></h4>
+                <h4 class="card-title custom-font-2"><strong>An epic Quest</strong></h4>
                 <p class="card-text custom-font-2">{fantasyText}</p>
                 <Link to="/fantasyquiz">
                   <div className="QcardButton">

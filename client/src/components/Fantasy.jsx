@@ -3,7 +3,7 @@ import { useState } from "react";
 import QuizPage from './QuizPage'
 
 export const Fantasy = () => {
-   const quizTitle = useState('Fantasy Quiz')
+   const quizTitle = useState('An epic Quest')
    const currentQuiz = 'fantasy'
    const [currentQuestion, setCurrentQuestion] = useState(0);
   
