@@ -10,10 +10,10 @@ This is the third and last engineering project from the Makers Academy 12 week b
 
 The four key technologies that make up application are MongoDB, Express, React, and Node. This combination in shorthand is descibed as a MERN stack. These are described below:
 
-MongoDB - document database
-Express(.js) - Node.js web framework
-React(.js) - a client-side JavaScript framework
-Node(.js) - the premier JavaScript web server
+MongoDB - document database <br />
+Express(.js) - Node.js web framework <br />
+React(.js) - a client-side JavaScript framework <br />
+Node(.js) - the premier JavaScript web server <br />
 
 Jest/React testing library - A Javascript testing framework and library
 
@@ -42,7 +42,7 @@ click 'a' to run all tests in this directory and the terminal will run all test 
 
 Open up the client folder in the terminal 
 
-Open the main folder in a second terminal window in 
+Open the main folder in a second terminal window
 
 Once both these are open start the server by typing the following command in both terminal windows 
 
