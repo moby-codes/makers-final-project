@@ -27,8 +27,8 @@ export default function App() {
       </div> */}
 
         <Container>
-          <Route path="/signin" component={home} exact />
-          <Route path="/" component={QuizDashboard} exact />
+          <Route path="/" component={home} exact />
+          <Route path="/quiz-dashboard" component={QuizDashboard} exact />
           <Route path="/spacequiz" component={SpaceQuiz} exact />
           <Route path="/about" component={About} exact />
           <Route path="/racecarsquiz" component={Racecar} exact />
