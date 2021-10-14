@@ -61,3 +61,4 @@ PORT=5000
 ```
 
 Make sure to change <password> to the DB password.
+...
