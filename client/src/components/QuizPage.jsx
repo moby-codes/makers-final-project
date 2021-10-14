@@ -8,6 +8,7 @@ export const QuizPage = ({currentQuiz, quizTitle, currentQuestion, setCurrentQue
 
   const [questions, setQuestions] = useState([]);
   const [showScore, setShowScore] = useState(false)
+  const [score, setScore] = useState(0);
 
   useEffect(() => {
     async function fetchData() {
@@ -23,6 +24,7 @@ export const QuizPage = ({currentQuiz, quizTitle, currentQuestion, setCurrentQue
       { questions.length > 0 && 
           <Story 
           currentQuestion={currentQuestion}
+          score={score}
           showScore={showScore}
           questions={questions} />
       }
@@ -32,6 +34,8 @@ export const QuizPage = ({currentQuiz, quizTitle, currentQuestion, setCurrentQue
           setCurrentQuestion={setCurrentQuestion}
           showScore={showScore}
           setShowScore={setShowScore}
+          score={score}
+          setScore={setScore}
           questions={questions}/>
       }
     </>

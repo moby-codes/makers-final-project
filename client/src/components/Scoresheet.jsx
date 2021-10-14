@@ -6,7 +6,7 @@ export const Scoresheet = ({results}) => {
 return (
   <>
   <div className="score-section">  
-  <h2 id="custom-font-2"> How did you do? </h2>
+  <h2 id="custom-font-2"> Here's how you did: </h2>
   <br />
   {results.map((element, index) => 
     { return element ? (

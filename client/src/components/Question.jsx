@@ -3,11 +3,10 @@ import { useState } from "react";
 import { Container } from "react-bootstrap";
 import Scoresheet from "./Scoresheet";
 
-export const Question = ({currentQuestion, setCurrentQuestion, questions, showScore, setShowScore}) => {
+export const Question = ({currentQuestion, setCurrentQuestion, questions, showScore, setShowScore, score, setScore}) => {
   
   const [results] = useState([]);
 
-  const [score, setScore] = useState(0);
   
   const handleAnswerButtonClick = (isCorrect) => {
     if (isCorrect) {
