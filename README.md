@@ -8,11 +8,14 @@ This is the third and last engineering project from the Makers Academy 12 week b
 
 ## Technologies used
 
-For our front-end of application we have used React 
+The four key technologies that make up application are MongoDB, Express, React, and Node. This combination in shorthand is descibed as a MERN stack. These are described below:
 
-Back End: Using Express and MongoDB as our database  
+MongoDB - document database
+Express(.js) - Node.js web framework
+React(.js) - a client-side JavaScript framework
+Node(.js) - the premier JavaScript web server
 
-Testing with Jest and the react testing library 
+Jest/React testing library - A Javascript testing framework and library
 
 ## initial setup 
 
@@ -31,7 +34,7 @@ type into the terminal
 
 followed by the command 
 
-''' npm test ''' 
+``` npm test ```
 
 click 'a' to run all tests in this directory and the terminal will run all test suites. 
 
