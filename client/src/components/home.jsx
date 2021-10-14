@@ -18,9 +18,9 @@ export const home = () => {
       <img src={img3} alt="code4fun teaching"/>
       </div>
       
-    <div className="homepagetxt" class="mb-0"> 
+    <div className="homepagetxt"> 
       <Container>
-        <p>Code4Fun is an interactive quiz that Kids can use to learn coding. We are language Agnostic and you can enjoy a bunch of basic coding principles through our dynamic quiz. New themes are being added to our quiz regularly and we are always updating to make it up to date at all times</p>
+        <p>Code4Fun is an interactive quiz that Kids can use to learn coding. We are language Agnostic and you can enjoy a bunch of basic coding principles through our dynamic quiz. New themes are being added to our quiz regularly and we are always updating to make it up to date at all times! Try and help fly your rocket to the moon or count how many laps you have done in  your race car or be part of your own fantasy!</p>
       </Container>
     </div>
 
@@ -31,7 +31,7 @@ export const home = () => {
   <div className="quote-one">
     <figure>
       <blockquote class="blockquote">
-        <p class="mb-0">The best enviroment for any child to learn the basic coding principles</p>
+        <p>The best enviroment for any child to learn the basic coding principles</p>
       </blockquote>
         <figcaption class="blockquote-footer">
         Co-Founder  <cite title="Source Title">Mubashar Ali</cite>
