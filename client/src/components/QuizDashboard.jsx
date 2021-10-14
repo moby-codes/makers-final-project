@@ -6,6 +6,12 @@ import Title from "./Title"
 
 const QuizDashboard = () => {
 
+const buttonText = "Start Quiz"
+const spaceText = "Learn how to program DIANE-1000, a rocket ship computer, as you blast off into space. You will find out about variables, operators and data types."
+const raceCarText = "Program a racing car's computer so that your team can win the race. You will learn about variables, boolean logic, if/else statements, and while loops."
+const fantasyText = "TBC"
+
+
   return (
     <>
 
@@ -15,9 +21,10 @@ const QuizDashboard = () => {
         </Container>
       </div> 
       <Container>
-        <h2 id="custom-font-2"> Welcome to the quizzes. Choose which quiz  you would like to play below:</h2>
+        <h2 id="custom-font-2-centre">Welcome budding coder!</h2>
+        <h2 id="custom-font-2-centre">We are delighted you have selected us to start your learning journey. 
+        Please select any story below to start your adventure into coding!</h2>
         </Container>
-
 
       <div className="qcard">
         <Container>
@@ -25,10 +32,10 @@ const QuizDashboard = () => {
             <div class="card-header custom-font-2">Theme: Space</div>
               <div class="card-body">
                 <h4 class="card-title custom-font-2"><strong>A voyage to the Moon</strong></h4>
-                <p class="card-text custom-font-2">Welcome to Space, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
+                <p class="card-text custom-font-2">{spaceText}</p>
                 <Link to="/spacequiz">
                   <div className="QcardButton">
-                    <button type="button" class="custom-font-2 btn btn-warning">Take Quiz</button> 
+                    <button type="button" class="custom-font-2 btn btn-warning">{buttonText}</button> 
                   </div> 
                 </Link>
             </div>
@@ -38,22 +45,20 @@ const QuizDashboard = () => {
 
 
       <div className="qcard">
-      <Container>
-      
-          <div class="card text-white bg-warning mb-3">
-            <div class="card-header custom-font-2">Theme: Racing Cars</div>
-              <div class="card-body">
-                <h4 class="card-title custom-font-2"><strong>Formula Fun</strong></h4>
-                <p class="card-text custom-font-2">You will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
-                <Link to="/racecarsquiz">
-                  <div className="QcardButton">
-                    <button type="button" class="custom-font-2 btn btn-success">Take Quiz</button> 
-                  </div>  
-                </Link>
-            </div>
+      <Container>      
+        <div class="card text-white bg-warning mb-3">
+          <div class="card-header custom-font-2">Theme: Racing Cars</div>
+            <div class="card-body">
+              <h4 class="card-title custom-font-2"><strong>Formula Fun</strong></h4>
+              <p class="card-text custom-font-2">{raceCarText}</p>                
+              <Link to="/racecarsquiz">
+                <div className="QcardButton">
+                  <button type="button" class="custom-font-2 btn btn-success">{buttonText}</button> 
+                </div>  
+              </Link>
           </div>
-         
-        </Container>
+        </div>
+      </Container>
       </div>
 
       <div className="qcard">
@@ -61,11 +66,11 @@ const QuizDashboard = () => {
           <div class="card text-white bg-info mb-3">
             <div class="card-header custom-font-2">Theme: Fantasy</div>
               <div class="card-body">
-                <h4 class="card-title custom-font-2"><strong>Fantasy Quiz</strong></h4>
-                <p class="card-text custom-font-2">details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
+                <h4 class="card-title custom-font-2"><strong>TBC</strong></h4>
+                <p class="card-text custom-font-2">{fantasyText}</p>
                 <Link to="/fantasyquiz">
                   <div className="QcardButton">
-                    <button type="button" class="custom-font-2 btn btn-danger">Take Quiz</button> 
+                    <button type="button" class="custom-font-2 btn btn-danger">{buttonText}</button> 
                   </div> 
                 </Link>
             </div>

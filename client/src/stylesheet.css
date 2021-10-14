@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: rgb(255, 159, 80) !important;
-  font-family: 'The Girl Next Door', cursive;
+  font-family: "The Girl Next Door", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,33 +11,38 @@ body {
 }
 
 #opening-text {
-  font-family: 'Chelsea Market', cursive;
+  font-family: "Chelsea Market", cursive;
   font-size: 1.7em;
   text-align: center;
 }
 
 .custom-font {
-  font-family: 'The Girl Next Door', cursive;
+  font-family: "The Girl Next Door", cursive;
 }
 
 #custom-font {
-  font-family: 'The Girl Next Door', cursive;
+  font-family: "The Girl Next Door", cursive;
 }
 
 .custom-font-2 {
-  font-family: 'Chelsea Market', cursive;
+  font-family: "Chelsea Market", cursive;
 }
 
 #custom-font-2 {
-  font-family: 'Chelsea Market', cursive;
+  font-family: "Chelsea Market", cursive;
+}
+
+#custom-font-2-centre {
+  font-family: "Chelsea Market", cursive;
+  text-align: center;
 }
 
 .custom-font-3 {
-  font-family: 'Fredericka the Great', cursive;
+  font-family: "Fredericka the Great", cursive;
 }
 
 #custom-font-3 {
-  font-family: 'Fredericka the Great', cursive;
+  font-family: "Fredericka the Great", cursive;
 }
 
 .font-weight {
