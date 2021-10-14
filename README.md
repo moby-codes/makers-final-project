@@ -2,7 +2,7 @@
 
 Contributors: Ian King, Mubashar Ali, Ed Packard and Graeme Stirling. 
 
-## description
+## Description
 
 This is the third and last engineering project from the Makers Academy 12 week bootcamp. This group was formed of individuals interested in creating a learning platform for teaching coding in a fun way. During discussion about the direction of our project we settled on creating a quiz with vibrant colour themes and engaging stories. The questions would not be designed for a specific langauge and instead focus on teaching basic fundamentals.  
 
