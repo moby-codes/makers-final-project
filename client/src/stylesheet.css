@@ -104,6 +104,16 @@ body {
   width: 65%;
   margin: auto;
 }
+
+.question-body {
+  background: rgb(30, 194, 223) !important;
+}
+
+.border-warning {
+  background: rgb(177, 222, 12) !important;
+  /* border-warning */
+}
+
 .qcard {
   padding-top: 35px;
   padding-bottom: 25px;
@@ -115,7 +125,6 @@ body {
 .quizQuestions {
   width: 75%;
   margin: auto;
-  background: rgb(222, 12, 12) !important;
 }
 
 .QcardButton {
