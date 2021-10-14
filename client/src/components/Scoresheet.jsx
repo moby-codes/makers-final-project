@@ -18,7 +18,7 @@ return (
     <Link to='/'>
         <div className='returnButton'>
           <br />
-          <button type="button"> Return to Home </button>
+          <button class="button-bg" type="button"> Return to Quizzes </button>
         </div>
     </Link>
   </div>

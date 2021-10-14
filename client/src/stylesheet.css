@@ -53,21 +53,21 @@ body {
 
 #about-page-title {
   font-family: helvetica;
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding-top: 20px;
 }
 
 #about-page-non-title {
   font-family: helvetica;
-  font-size: 0.95em;
+  font-size: 1.1em;
   text-align: left;
   padding-top: 10px;
   font-weight: normal;
 }
 
-/* #root{
-  background-color: rgb(255, 159, 80);
-} */
+.button-bg {
+  background: rgb(30, 223, 56) !important;
+}
 
 .title {
   text-align: center;
@@ -92,6 +92,7 @@ body {
 }
 
 .footer {
+  padding-top: 50px;
   text-align: center;
   bottom: 0;
   position: relative;
@@ -128,11 +129,6 @@ body {
 .QcardButton {
   text-align: center;
 }
-
-/* .about_us_paragraph {
-  text-align: left;
-  padding-top: 20px;
-} */
 
 .about_us_title {
   padding-top: 20px;

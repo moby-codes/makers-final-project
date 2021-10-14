@@ -9,7 +9,7 @@ export const About = () => {
       </Container>
     </div>
     <Container>
-        <h3 data-testid="aboutHeading1" id="about-page-title"><strong>Background:</strong></h3>
+        <h3 class="about-size" data-testid="aboutHeading1" id="about-page-title"><strong>Background:</strong></h3>
     </Container>
     <div className="about_us_paragraph">
       <Container>
