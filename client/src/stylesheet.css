@@ -1,9 +1,7 @@
 body {
   margin: 0;
+  height: 100%;
   background-color: rgb(255, 159, 80) !important;
-  font-family: "The Girl Next Door", cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
@@ -139,4 +137,17 @@ body {
 .about_us_title {
   padding-top: 20px;
   text-align: center;
+}
+
+.homepagetxt {
+  text-align: left;
+  padding-top: 100px;
+}
+
+img {
+  padding: 10px;
+  border: rgb(222, 12, 12);
+}
+.image1 {
+  height: 75%;
 }

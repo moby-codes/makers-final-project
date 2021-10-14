@@ -1,16 +1,46 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import Test from '../images/test.jpg'
-//import './stylesheet.css'
+import Title from "./Title"
+
 export const home = () => {
   return (
     <>
-    
+      <div className="title">
+        <Container>
+          <Title />
+        </Container>
+      </div> 
+
+    <div className="homepagetxt"> 
+      <Container>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </Container>
+    </div>
+    <br />
+
+
+    <figure class="text-end">
+  <blockquote class="blockquote">
+    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </figcaption>
+</figure>
+    <section className="image1">
+      <Container>
+      <img src={Test} />
+      </Container>
+    </section>
+    <br />
+    <div class="col-sm-12 section-heading">
     <Container>
-    <img src={Test} />
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     </Container>
-
-
+    </div>
+    
 
     </>
   )

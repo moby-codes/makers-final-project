@@ -2,7 +2,6 @@ import React from 'react'
 import { Container } from "react-bootstrap";
 // import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
-import Title from "./Title"
 
 const QuizDashboard = () => {
 
@@ -15,14 +14,10 @@ const fantasyText = "Set off on an adventure to defeat the evil wizard with your
   return (
     <>
 
-<div className="title">
-        <Container>
-          <Title />
-        </Container>
-      </div> 
+
       <Container>
-        <h2 id="custom-font-2-centre">Welcome budding coder!</h2>
-        <h2 id="custom-font-2-centre">We are delighted you have selected Code4Fun for your learning journey. 
+        <h2 id="custom-font-2-centre">Welcome budding coder!</h2> <br/>
+        <h2 id="custom-font-2-centre">We are delighted you have selected us to start your learning journey. 
         Please select any story below to start your adventure into coding!</h2>
         </Container>
 
