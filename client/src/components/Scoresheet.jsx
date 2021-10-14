@@ -6,7 +6,8 @@ export const Scoresheet = ({results}) => {
 return (
   <>
   <div className="score-section">  
-  <h2> How did you do? </h2>
+  <h2 id="custom-font-2"> How did you do? </h2>
+  <br />
   {results.map((element, index) => 
     { return element ? (
       <h3 class="custom-font-2">Question {index +1}: Correct - congratulations!</h3>
@@ -16,6 +17,7 @@ return (
   )}
     <Link to='/'>
         <div className='returnButton'>
+          <br />
           <button type="button"> Return to Home </button>
         </div>
     </Link>
