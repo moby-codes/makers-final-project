@@ -24,7 +24,7 @@ const QuizDashboard = () => {
           <div class="card text-white bg-success mb-3">
             <div class="card-header custom-font-2">Theme: Space</div>
               <div class="card-body">
-                <h4 class="card-title custom-font-2"><strong>Space Blast</strong></h4>
+                <h4 class="card-title custom-font-2"><strong>A voyage to the Moon</strong></h4>
                 <p class="card-text custom-font-2">Welcome to Space, you will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
                 <Link to="/spacequiz">
                   <div className="QcardButton">
@@ -43,7 +43,7 @@ const QuizDashboard = () => {
           <div class="card text-white bg-warning mb-3">
             <div class="card-header custom-font-2">Theme: Racing Cars</div>
               <div class="card-body">
-                <h4 class="card-title custom-font-2"><strong>Racing Cars Quiz</strong></h4>
+                <h4 class="card-title custom-font-2"><strong>Formula Fun</strong></h4>
                 <p class="card-text custom-font-2">You will learn about Arrays. details about what you will learn / story, details about what you will learn / story, details about what you will learn / story</p>
                 <Link to="/racecarsquiz">
                   <div className="QcardButton">
