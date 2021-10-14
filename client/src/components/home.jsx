@@ -1,7 +1,8 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import Test from '../images/test.jpg'
+import img3 from '../images/teaching.png'
 import Title from "./Title"
+import 'animate.css';
 
 export const home = () => {
   return (
@@ -12,35 +13,60 @@ export const home = () => {
         </Container>
       </div> 
 
-    <div className="homepagetxt"> 
+      
+      <div className="image3">
+      <img src={img3} alt="code4fun teaching"/>
+      </div>
+      
+    <div className="homepagetxt" class="mb-0"> 
       <Container>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p><strong>Code4Fun is an interactive quiz that Kids can use to learn coding. We are language Agnostic and you can enjoy a bunch of basic coding principles through our dynamic quiz. New themes are being added to our quiz regularly and we are always updating to make it up to date at all times</strong></p>
       </Container>
-    </div>
-    <br />
-
-
-    <figure class="text-end">
-  <blockquote class="blockquote">
-    <p class="mb-0">The best enviroment for any child to learn the basic coding principles</p>
-  
-  </blockquote>
-  <figcaption class="blockquote-footer">
-    Co-Founder  <cite title="Source Title">Mubashar Ali</cite>
-  </figcaption>
-</figure>
-    <section className="image1">
-      <Container>
-      <img src={Test} />
-      </Container>
-    </section>
-    <br />
-    <div class="col-sm-12 section-heading">
-    <Container>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </Container>
     </div>
     
+    <br />
+    <br />
+
+  <Container>
+  <div className="quote-one">
+    <figure>
+      <blockquote class="blockquote">
+        <p class="mb-0">The best enviroment for any child to learn the basic coding principles</p>
+      </blockquote>
+        <figcaption class="blockquote-footer">
+        Co-Founder  <cite title="Source Title">Mubashar Ali</cite>
+        </figcaption>
+    </figure>
+  </div>
+  </Container>
+
+
+  <Container>
+    <div className="quote-one">
+      <figure class="text-center">
+        <blockquote class="blockquote">
+         <p class="mb-0">I'm on my way to build my own facebook!</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Eoin, 8, <cite title="Source Title">London</cite>
+        </figcaption>
+      </figure>
+    </div>
+  </Container>
+
+  <Container>
+    <div className="quote-one">
+      <figure class="text-end">
+        <blockquote class="blockquote">
+          <p class="mb-0">I absolutely loved the quiz and learnt alot</p>
+        </blockquote>
+          <figcaption class="blockquote-footer">
+          Leo, 6, <cite title="Source Title">From London</cite>
+      </figcaption>
+    </figure>
+    </div>
+  </Container>
+
 
     </>
   )

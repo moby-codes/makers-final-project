@@ -94,7 +94,7 @@ body {
 .footer {
   text-align: center;
   bottom: 0;
-  position: relative;
+  position: absolute;
 }
 
 .story-question {
@@ -137,6 +137,7 @@ body {
 .about_us_title {
   padding-top: 20px;
   text-align: center;
+  font-size: x-large;
 }
 
 .homepagetxt {
@@ -144,10 +145,20 @@ body {
   padding-top: 100px;
 }
 
-img {
+/* img {
   padding: 10px;
-  border: rgb(222, 12, 12);
-}
+  height: 10%;
+  
+} */
 .image1 {
   height: 75%;
+}
+
+.image2 {
+  height: 50%;
+  width: 50%;
+}
+.image3 {
+  padding-left: 310px;
+  padding-bottom: 30px;
 }
