@@ -20,10 +20,10 @@ export const home = () => {
       
     <div className="homepagetxt" class="mb-0"> 
       <Container>
-        <p><strong>Code4Fun is an interactive quiz that Kids can use to learn coding. We are language Agnostic and you can enjoy a bunch of basic coding principles through our dynamic quiz. New themes are being added to our quiz regularly and we are always updating to make it up to date at all times</strong></p>
+        <p>Code4Fun is an interactive quiz that Kids can use to learn coding. We are language Agnostic and you can enjoy a bunch of basic coding principles through our dynamic quiz. New themes are being added to our quiz regularly and we are always updating to make it up to date at all times</p>
       </Container>
     </div>
-    
+
     <br />
     <br />
 
