@@ -12,7 +12,7 @@ export const QuizPage = ({currentQuiz, quizTitle, currentQuestion, setCurrentQue
 
   useEffect(() => {
     async function fetchData() {
-      const result = await axios("http://localhost:5000/" + currentQuiz);
+      const result = await axios(process.env.REACT_APP_SERVER_URL + currentQuiz);
       setQuestions(result.data);
     }
     fetchData()
