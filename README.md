@@ -3,7 +3,7 @@
 Contributors: Ian King, Mubashar Ali, Ed Packard and Graeme Stirling.
 
 ## Presentation and Demonstration of application
-See [Here] for a live video demonstration(https://www.youtube.com/watch?v=SroOXuwUyO0&t=1300s) at 12:14.
+* See [Here](https://www.youtube.com/watch?v=SroOXuwUyO0&t=703s) for the groups live presentation and project demonstration.
 
 ### Homepage 
 <img alt="home" src="public/images/Homepage.png" width="600">
